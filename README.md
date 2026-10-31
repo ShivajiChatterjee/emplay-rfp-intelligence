@@ -8,6 +8,10 @@ The official extraction contract contains exactly 20 fields. Document layouts,
 product categories, identifiers, contacts, and addenda are discovered from each
 bid's indexed evidence; they are not encoded for a particular solicitation.
 
+## Demo Video
+
+[Watch the RFP Intelligence Platform Demo]([YOUR_GOOGLE_DRIVE_LINK](https://drive.google.com/file/d/1TrGa1b7-6FLPXrwgrlQFjxh_2suBw8SE/view?usp=sharing))
+
 ## Setup
 
 Python 3.12 is recommended.
