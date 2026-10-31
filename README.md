@@ -10,7 +10,7 @@ bid's indexed evidence; they are not encoded for a particular solicitation.
 
 ## Demo Video
 
-[Watch the RFP Intelligence Platform Demo]([YOUR_GOOGLE_DRIVE_LINK](https://drive.google.com/file/d/1TrGa1b7-6FLPXrwgrlQFjxh_2suBw8SE/view?usp=sharing))
+[Watch the RFP Intelligence Platform Demo](https://drive.google.com/file/d/1TrGa1b7-6FLPXrwgrlQFjxh_2suBw8SE/view?usp=sharing) 
 
 ## Setup
 
