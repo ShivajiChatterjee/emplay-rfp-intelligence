@@ -1,0 +1,344 @@
+{
+  "bid_id": "Bid2",
+  "fields": {
+    "Bid Number": {
+      "value": "BPM044557 / #E20P4600040",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Title": {
+      "value": "Dell Laptops w/Extended Warranty",
+      "sources": [
+        {
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Due Date": {
+      "value": "06/10/2024 02:00 PM EDT",
+      "sources": [
+        {
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Bid Submission Type": {
+      "value": "Responses will only be accepted through the State's eMaryland Marketplace Advantage (eMMA) e-Procurement system.",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Term of Bid": {
+      "value": "The Dell Limited Hardware Warranty is for 3 years following the date of delivery.",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Pre Bid Meeting": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents: The provided documents do not contain any mention of a pre-bid meeting or conference."
+    },
+    "Installation": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents: The provided documents specify the 'Place of Performance' as the MD State Treasurer's Office at 80 Calvert Street, Annapolis, MD 21401, and require delivery within 45 days of award, but they do not explicitly state who is responsible for the physical installation of the equipment."
+    },
+    "Bid Bond Requirement": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents: The provided documents do not contain any mention of a bid bond requirement for this solicitation."
+    },
+    "Delivery Date": {
+      "value": "Delivery within 45 days of Award.",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Payment Terms": {
+      "value": "Invoicing Instructions: Email invoices to: STOaccountspayable@treasurer.state.md.us. Invoice(s) shall be submitted within 10 days of delivering the equipment and shall include at a minimum: Contractor name, mailing address, social security number or Federal Tax ID number, phone number, reference to the State's assigned PORFP number, date, invoice number, amount due, and proof of delivery including packing slip or delivery confirmation and equipment serial numbers. Retainage: unspecified. Payment Schedule: unspecified.",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 0.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Any Additional Documentation Required": {
+      "value": [
+        "Estimated ship date/lead time for each item",
+        "Letter of Authorization (LOA) from the Manufacturer or Distributor (if requested by the State)",
+        "Mercury Affidavit",
+        "Warranty certificate or Affidavit",
+        "Drug and Alcohol-Free Workplace certification"
+      ],
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        },
+        {
+          "file": "Contract_Affidavit.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "MFG for Registration": {
+      "value": "The Master Contractor must be an authorized reseller for Dell. The state reserves the right to request a Letter of Authorization (LOA) from the Manufacturer or Distributor.",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Contract or Cooperative to use": {
+      "value": "Desktop, Laptop and Tablet 2015 Master Contract, 060B5400007",
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Model_no": {
+      "value": [
+        "CC7802",
+        "WD22TB4"
+      ],
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Part_no": {
+      "value": [
+        {
+          "item": "Dell Latitude 5550",
+          "part_number": "SI# CC7802"
+        },
+        {
+          "item": "Dell Thunderbolt 4 Dock - WD22TB4",
+          "part_number": "WD22TB4"
+        }
+      ],
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Product": {
+      "value": [
+        "Dell Latitude 5550",
+        "Dell Thunderbolt 4 Dock - WD22TB4",
+        "Manufacturer's Extended Warranty"
+      ],
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "contact_info": {
+      "value": {
+        "Procurement Officer": {
+          "Name": "Tamaira Hawkins",
+          "Email": "thawkins@treasurer.state.md.us",
+          "Phone": "410-260-7533",
+          "Mailing Address": "MD State Treasurer's Office 80 Calvert Street, Room 109 Annapolis, MD 21401",
+          "Communication Instructions": "Questions must be submitted in writing via e-mail to the Procurement Officer no later than 06/01/2024 at 2:00 PM EDT with the subject line, \"QUESTION for Dell Laptop #E20P4600040\""
+        }
+      },
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "company_name": {
+      "value": "State of Maryland Treasurer's Office",
+      "sources": [
+        {
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Bid Summary": {
+      "value": "Dell Laptops w/Extended Warranty. The Dell Limited Hardware Warranty is for 3 years following the date of delivery. 06/10/2024 02:00 PM EDT. Responses will only be accepted through the State's eMaryland Marketplace Advantage (eMMA) e-Procurement system. Delivery within 45 days of Award. State of Maryland Treasurer's Office.",
+      "sources": [
+        {
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Product Specification": {
+      "value": {
+        "Dell Latitude 5550": {
+          "Model Number": "SI# CC7802",
+          "Quantity": "30",
+          "Technical Requirements": "Intel Core Ultra 5 125U processor (12 MB cache, 12 cores, 14 threads, up to 4.3 GHz Turbo), Windows 11 Pro, 16 GB: 2 x 8 GB, DDR5, 5600 MT/s, 256 GB, M.2 2230, TLC, Gen 4 PCIe NVMe, SSD, 15.6\" FHD 1920x1080, 60Hz, IPS, Non-Touch, AG, 250 nit, 45% NTSC, FHD Cam, English US backlit AI hotkey keyboard with numeric keypad, 99-key, Intel Wi-Fi 6E AX211, Bluetooth 5.3, 3-cell 54 Wh ExpressCharge Capable battery, 65W AC adapter, FHD HDR RGB Camera, TNR, Camera Shutter, Microphone",
+          "Functional Requirements": "Microsoft Copilot ready",
+          "Performance Requirements": "ENERGY STAR Qualified, EPEAT 2018 Registered (Gold)",
+          "Warranty Requirements": "Dell Limited Hardware Warranty Extended for all machines purchased - 3 Years, 3 years following the date of delivery",
+          "Configuration Requirements": "Custom Configuration Dell Additional Software Mix, Windows AutoPilot"
+        },
+        "Dell Thunderbolt 4 Dock - WD22TB4": {
+          "Model Number": "WD22TB4",
+          "Quantity": "30",
+          "Technical Requirements": "unspecified",
+          "Functional Requirements": "Microsoft Copilot ready",
+          "Performance Requirements": "unspecified",
+          "Warranty Requirements": "Dell Limited Hardware Warranty Extended for all machines purchased - 3 Years, 3 years following the date of delivery",
+          "Configuration Requirements": "unspecified"
+        },
+        "General Requirements": {
+          "Warranty Requirements": "Warranty certificate or Affidavit to be presented upon award",
+          "Compatibility": "unspecified",
+          "Configuration": "Purchase new and unused equipment, Master Contractor must be an authorized reseller for Dell, Master Contractor must provide a Mercury Affidavit"
+        }
+      },
+      "sources": [
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3
+        },
+        {
+          "file": "Dell_Laptop_Specs.pdf",
+          "page": 1
+        },
+        {
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 0.0,
+      "notes": "Deterministic citation and type checks passed"
+    }
+  },
+  "addendum_changes": [],
+  "validation": {
+    "passed": 17,
+    "failed": 0,
+    "not_found": 3
+  },
+  "trace": [
+    {
+      "agent": "orchestrator_planner",
+      "action": "create_execution_plan",
+      "status": "success",
+      "started_at": "2026-10-31T12:43:13.188735Z",
+      "latency_ms": 0.0,
+      "tool_calls": [],
+      "input_summary": {
+        "mode": "extract",
+        "bid_count": 1,
+        "goal_characters": 44
+      },
+      "output_summary": {
+        "selected_specialist_groups": [
+          "commercial_legal",
+          "dates_logistics",
+          "product_specifications"
+        ],
+        "planned_tasks": 24,
+        "selected_fields": 20,
+        "validation_status": "passed"
+      },
+      "tokens_used": 0,
+      "error": null,
+      "run_id": "7a625185-150e-404a-97ee-f85d990af115",
+      "field_name": null,
+      "metadata": {
+        "model": "deterministic-registry-plan",
+        "finish_reason": "LOCAL_VALIDATION",
+        "token_usage": {
+          "prompt_tokens": null,
+          "output_tokens": null,
+          "thought_tokens": null,
+          "total_tokens": 0
+        },
+        "retry_attempts": 0,
+        "failure_classification": null,
+        "structured_output_validation": "passed"
+      }
+    }
+  ]
+}

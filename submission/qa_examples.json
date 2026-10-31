@@ -1,0 +1,505 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-31T12:47:42.416866+00:00",
+  "question_dataset": "evaluation\\questions.json",
+  "target_successes": 10,
+  "results": [
+    {
+      "id": "B1-01",
+      "bid_id": "Bid1",
+      "question": "What is the final submission deadline after Addendum 2?",
+      "status": "success",
+      "attempted_at": "2026-10-31T12:47:42.416866+00:00",
+      "answer": "Following the issuance of Addendum 2, the final submission deadline for RFP JA-207652 is July 9, 2024, at 2:00 PM CST.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1,
+          "chunk_id": "0bcd48b3-184a-5557-9cdd-1e3270c06615"
+        }
+      ],
+      "verification_errors": [],
+      "run_id": "f49300ad-e099-409d-bc87-520ed383a914",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_f49300ad-e099-409d-bc87-520ed383a914.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 43836.82
+    },
+    {
+      "id": "B2-01",
+      "bid_id": "Bid2",
+      "question": "What is the Bid2 solicitation closing date and time?",
+      "status": "incomplete",
+      "attempted_at": "2026-10-31T12:48:26.265455+00:00",
+      "answer": "The solicitation closing date and time for Bid2 (BPM044557) is 06/10/2024 at 02:00 PM EDT.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1,
+          "chunk_id": "b12a25c4-6be1-5ace-999d-474287411334"
+        },
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 1,
+          "chunk_id": "89f0b76f-7e53-517e-85aa-b4baeb148078"
+        }
+      ],
+      "verification_errors": [
+        "value is unsupported: 'The solicitation closing date and time for Bid2 (BPM044557) is 06/10/2024 at 02:00 PM EDT.'"
+      ],
+      "run_id": "f97e347a-c97c-4753-9037-9fd3388942c4",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_f97e347a-c97c-4753-9037-9fd3388942c4.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 76015.67
+    },
+    {
+      "id": "B1-03",
+      "bid_id": "Bid1",
+      "question": "What is the initial contract term for the student and staff computing devices RFP?",
+      "status": "success",
+      "attempted_at": "2026-10-31T12:49:42.288144+00:00",
+      "answer": "The contracts resulting from the Student and Staff Computing Devices RFP (JA-207652) are for a five-year term.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1,
+          "chunk_id": "dfad29f6-2dfb-5cbe-8804-7eaadda56736"
+        },
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 3,
+          "chunk_id": "8853fa3d-5432-5cf3-9af2-ad256f03417c"
+        }
+      ],
+      "verification_errors": [],
+      "run_id": "0a1a88b8-f5c4-432c-818c-34b1d7ede27b",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_0a1a88b8-f5c4-432c-818c-34b1d7ede27b.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 16962.88
+    },
+    {
+      "id": "B2-06",
+      "bid_id": "Bid2",
+      "question": "How soon after award must the Dell laptop order be delivered?",
+      "status": "success",
+      "attempted_at": "2026-10-31T12:49:59.265736+00:00",
+      "answer": "The Dell laptop order must be delivered within 45 days of the award.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2,
+          "chunk_id": "89d38d56-c935-54f2-bfaf-4779df3588fa"
+        }
+      ],
+      "verification_errors": [],
+      "run_id": "f489a148-6266-463f-938b-9a8f2bb4c232",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_f489a148-6266-463f-938b-9a8f2bb4c232.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 44350.28
+    },
+    {
+      "id": "B1-04",
+      "bid_id": "Bid1",
+      "question": "What minimum warranty periods apply to student Chromebooks and Windows laptops?",
+      "status": "success",
+      "attempted_at": "2026-10-31T12:50:43.632935+00:00",
+      "answer": "The minimum warranty period required for student Chromebooks is one year, and the minimum warranty period required for student and staff Windows laptops is three years.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 3,
+          "chunk_id": "a4d2a533-4499-527b-b05e-e2be14a7d85a"
+        },
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 4,
+          "chunk_id": "4f04c258-2f85-5555-93a5-1bed4373deca"
+        },
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 5,
+          "chunk_id": "71db5ed2-97aa-5ba6-9703-deda3c13568c"
+        }
+      ],
+      "verification_errors": [],
+      "run_id": "822a0f5e-9691-444e-83ee-276d69fc9a5d",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_822a0f5e-9691-444e-83ee-276d69fc9a5d.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 14571.15
+    },
+    {
+      "id": "B2-08",
+      "bid_id": "Bid2",
+      "question": "How long is the required Dell hardware extended warranty?",
+      "status": "success",
+      "attempted_at": "2026-10-31T12:50:58.220830+00:00",
+      "answer": "The required Dell Limited Hardware Warranty extension for all machines purchased is 3 years, effective for 3 years following the date of delivery.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3,
+          "chunk_id": "3863c638-e99f-52aa-919f-1d09b1cafa69"
+        }
+      ],
+      "verification_errors": [],
+      "run_id": "afc69e95-852a-4c86-afa5-9a688444cb1e",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_afc69e95-852a-4c86-afa5-9a688444cb1e.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 29893.56
+    },
+    {
+      "id": "B2-02",
+      "bid_id": "Bid2",
+      "question": "Which processor is included in the Dell Latitude 5550 configuration?",
+      "status": "incomplete",
+      "attempted_at": "2026-10-31T12:51:28.117614+00:00",
+      "answer": null,
+      "confidence": 0.0,
+      "notes": "Workflow returned no Q&A answer.",
+      "sources": [],
+      "verification_errors": [],
+      "run_id": "94fc4da4-1d83-46a9-9c8b-4a397dc33134",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_94fc4da4-1d83-46a9-9c8b-4a397dc33134.json",
+      "warnings": [],
+      "errors": [
+        "Planner failed: GeminiGenerationError: Structured generation with gemini-3.1-flash-lite failed: transient_unavailable; finish_reason=unknown"
+      ],
+      "latency_ms": 33400.35
+    },
+    {
+      "id": "B1-06",
+      "bid_id": "Bid1",
+      "question": "Is Windows Autopilot required for the devices?",
+      "status": "incomplete",
+      "attempted_at": "2026-10-31T12:52:01.530856+00:00",
+      "answer": "Yes, Windows Autopilot is required for Windows devices under this bid. This requirement is explicitly stated in the Addendum 1 RFP JA-207652, and the minimum requirements for Tier 1 Staff Windows Basic Desktops and Tier 3 Student Windows Laptops also specify that devices must be 'Enterprise Management Ready with Autopilot Enrollment'.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 4,
+          "chunk_id": "c179cc9a-a0fc-5705-b5c5-492a567a77da"
+        },
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 4,
+          "chunk_id": "76cdaa86-0bf4-5ec9-bf46-16ffd3b9eb84"
+        },
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 5,
+          "chunk_id": "c9390a4a-54e2-5c79-b6f4-41c17c37b947"
+        }
+      ],
+      "verification_errors": [
+        "value.claim[1] is unsupported: \"This requirement is explicitly stated in the Addendum 1 RFP JA-207652, and the minimum requirements for Tier 1 Staff Windows Basic Desktops and Tier 3 Student Windows Laptops also specify that devices must be 'Enterprise Management Ready with Autopilot Enrollment'.\""
+      ],
+      "run_id": "9daf6720-87f9-48f1-b3dd-97a516c80a91",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_9daf6720-87f9-48f1-b3dd-97a516c80a91.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 63367.62
+    },
+    {
+      "id": "B2-05",
+      "bid_id": "Bid2",
+      "question": "Must the master contractor be an authorized Dell reseller?",
+      "status": "success",
+      "attempted_at": "2026-10-31T12:53:04.904796+00:00",
+      "answer": "Yes, the Master Contractor must be an authorized reseller for Dell. The state reserves the right to request a Letter of Authorization (LOA) from the manufacturer or distributor to verify this status.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2,
+          "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+        }
+      ],
+      "verification_errors": [],
+      "run_id": "156ed449-d043-42a8-8937-0156e0c6999e",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_156ed449-d043-42a8-8937-0156e0c6999e.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 39680.21
+    },
+    {
+      "id": "B1-09",
+      "bid_id": "Bid1",
+      "question": "What is the purchasing buyer's email address for Bid1?",
+      "status": "incomplete",
+      "attempted_at": "2026-10-31T12:53:44.602273+00:00",
+      "answer": "The purchasing buyer's email address for Bid1 (JA-207652) is JALZATE@dallasisd.org.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 2,
+          "chunk_id": "db3472cd-b536-539f-82ac-8f5dad856fcb"
+        }
+      ],
+      "verification_errors": [
+        "value is unsupported: \"The purchasing buyer's email address for Bid1 (JA-207652) is JALZATE@dallasisd.org.\""
+      ],
+      "run_id": "d7774edb-87c8-4612-9465-eaf592beaa6e",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_d7774edb-87c8-4612-9465-eaf592beaa6e.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 39998.74
+    },
+    {
+      "id": "B2-07",
+      "bid_id": "Bid2",
+      "question": "Which mercury-related document is required for Bid2?",
+      "status": "incomplete",
+      "attempted_at": "2026-10-31T12:54:24.615133+00:00",
+      "answer": "For Bid2, the Master Contractor is required to provide a Mercury Affidavit, which can be accessed at the following URL: https://doit.maryland.gov/contracts/Documents/hardware_contract/hwmercury_affidavit.pdf.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 2,
+          "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+        }
+      ],
+      "verification_errors": [
+        "value is unsupported: 'For Bid2, the Master Contractor is required to provide a Mercury Affidavit, which can be accessed at the following URL: https://doit.maryland.gov/contracts/Documents/hardware_contract/hwmercury_affidavit.pdf.'"
+      ],
+      "run_id": "6e0689e0-a053-400c-9c95-26ba672fb262",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_6e0689e0-a053-400c-9c95-26ba672fb262.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 18489.61
+    },
+    {
+      "id": "B2-04",
+      "bid_id": "Bid2",
+      "question": "What is the exact model number of the requested Dell Thunderbolt 4 Dock?",
+      "status": "success",
+      "attempted_at": "2026-10-31T12:54:43.126722+00:00",
+      "answer": "The exact model number for the requested Dell Thunderbolt 4 Dock is WD22TB4.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3,
+          "chunk_id": "a344a32c-13de-56ea-bce9-a1a378d13d9e"
+        },
+        {
+          "bid_id": "Bid2",
+          "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1,
+          "chunk_id": "b12a25c4-6be1-5ace-999d-474287411334"
+        }
+      ],
+      "verification_errors": [],
+      "run_id": "3c8ddfce-a70d-4d48-a399-8f3ee9ed4805",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_3c8ddfce-a70d-4d48-a399-8f3ee9ed4805.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 20787.58
+    },
+    {
+      "id": "B1-02",
+      "bid_id": "Bid1",
+      "question": "When was the Bid1 pre-proposal meeting scheduled?",
+      "status": "incomplete",
+      "attempted_at": "2026-10-31T12:55:22.194190+00:00",
+      "answer": "The pre-proposal meeting for Bid1 was scheduled for June 10, 2024, at 2:00 PM CST via TEAMS video conference.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 2,
+          "chunk_id": "0be6b7b2-277f-5642-a6e3-fa646f28b584"
+        }
+      ],
+      "verification_errors": [
+        "value is unsupported: 'The pre-proposal meeting for Bid1 was scheduled for June 10, 2024, at 2:00 PM CST via TEAMS video conference.'"
+      ],
+      "run_id": "f85757fd-6bc1-4cc7-9377-f067a41b8769",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_f85757fd-6bc1-4cc7-9377-f067a41b8769.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 63365.11
+    },
+    {
+      "id": "B1-05",
+      "bid_id": "Bid1",
+      "question": "Is USB 3.0 acceptable for the non-touch display monitor?",
+      "status": "success",
+      "attempted_at": "2026-10-31T12:56:25.571266+00:00",
+      "answer": "No, USB 3.0 is not acceptable for the non-touch display monitor. According to the official response provided in Addendum 1, USB 3.1 is the minimum requirement for the display monitor.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1,
+          "chunk_id": "deed3a2f-5749-59e9-a4de-b4e072c7c1cb"
+        },
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 6,
+          "chunk_id": "21d688b9-48b8-5e9e-bfdf-554e879ce993"
+        }
+      ],
+      "verification_errors": [],
+      "run_id": "4726a56c-510e-40f1-82ce-90bb0a029ea5",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_4726a56c-510e-40f1-82ce-90bb0a029ea5.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 92006.57
+    },
+    {
+      "id": "B1-07",
+      "bid_id": "Bid1",
+      "question": "What is the minimum RAM for the Tier 1 small student Chromebook?",
+      "status": "success",
+      "attempted_at": "2026-10-31T12:57:57.583970+00:00",
+      "answer": "The minimum RAM required for the Tier 1 small student Chromebook is 8GB DDR5 memory.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 4,
+          "chunk_id": "4f04c258-2f85-5555-93a5-1bed4373deca"
+        }
+      ],
+      "verification_errors": [],
+      "run_id": "adeb60bb-03cd-4e79-be6b-f5499040b23c",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_adeb60bb-03cd-4e79-be6b-f5499040b23c.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 65946.58
+    },
+    {
+      "id": "B1-08",
+      "bid_id": "Bid1",
+      "question": "How much RAM does the Tier 3 student Windows laptop require?",
+      "status": "incomplete",
+      "attempted_at": "2026-10-31T12:59:03.538795+00:00",
+      "answer": "The provided documentation for the Tier 3 Student Windows Laptop does not specify a RAM requirement. The available specifications list an Intel i5 13th Gen processor or equivalent, a minimum 13-inch diagonal display, a 720p minimum integrated camera, and enterprise management readiness with Autopilot enrollment, but the memory capacity is not mentioned.",
+      "confidence": 1.0,
+      "notes": "The RAM requirement is absent from the provided documentation.",
+      "sources": [
+        {
+          "bid_id": "Bid1",
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 4,
+          "chunk_id": "76cdaa86-0bf4-5ec9-bf46-16ffd3b9eb84"
+        }
+      ],
+      "verification_errors": [
+        "value.claim[0] is unsupported: 'The provided documentation for the Tier 3 Student Windows Laptop does not specify a RAM requirement.'",
+        "value.claim[1] is unsupported: 'The available specifications list an Intel i5 13th Gen processor or equivalent, a minimum 13-inch diagonal display, a 720p minimum integrated camera, and enterprise management readiness with Autopilot enrollment, but the memory capacity is not mentioned.'"
+      ],
+      "run_id": "a8a8dffa-9d8f-45ed-ac74-2778059e56d0",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_a8a8dffa-9d8f-45ed-ac74-2778059e56d0.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 39845.25
+    },
+    {
+      "id": "B2-03",
+      "bid_id": "Bid2",
+      "question": "How much RAM does the Dell Latitude 5550 have?",
+      "status": "incomplete",
+      "attempted_at": "2026-10-31T12:59:43.392617+00:00",
+      "answer": "The Dell Latitude 5550 specified in the provided documentation is equipped with 16 GB of RAM, configured as 2 x 8 GB, DDR5, 5600 MT/s memory.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "Dell_Laptop_Specs.pdf",
+          "page": 1,
+          "chunk_id": "abdf5172-e66c-561e-b936-d80fe1fdaecf"
+        }
+      ],
+      "verification_errors": [
+        "value is unsupported: 'The Dell Latitude 5550 specified in the provided documentation is equipped with 16 GB of RAM, configured as 2 x 8 GB, DDR5, 5600 MT/s memory.'"
+      ],
+      "run_id": "8c860a5a-56ed-438d-ad41-d6520693eab7",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_8c860a5a-56ed-438d-ad41-d6520693eab7.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 22002.64
+    },
+    {
+      "id": "B2-09",
+      "bid_id": "Bid2",
+      "question": "What are the technical evaluation criteria for the Dell laptop bid?",
+      "status": "success",
+      "attempted_at": "2026-10-31T13:00:05.402991+00:00",
+      "answer": "The technical evaluation criteria for the Dell laptop bid are listed as 'Accuracy of Bid (Meets All Requirements)' and 'Price'. Additionally, the PORFP specifies that technical criteria are considered in descending order of importance.",
+      "confidence": 1.0,
+      "notes": "",
+      "sources": [
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 3,
+          "chunk_id": "3863c638-e99f-52aa-919f-1d09b1cafa69"
+        },
+        {
+          "bid_id": "Bid2",
+          "file": "PORFP_-_Dell_Laptop_Final.pdf",
+          "page": 4,
+          "chunk_id": "a0028630-b49e-5a68-9e93-37bc77a6ab16"
+        }
+      ],
+      "verification_errors": [],
+      "run_id": "7dbccdf5-f987-48eb-a97e-62d0b2837f25",
+      "trace_path": "outputs\\qa_runs\\workflow_trace_7dbccdf5-f987-48eb-a97e-62d0b2837f25.json",
+      "warnings": [],
+      "errors": [],
+      "latency_ms": 18217.76
+    }
+  ],
+  "updated_at": "2026-10-31T13:02:47.534905+00:00"
+}

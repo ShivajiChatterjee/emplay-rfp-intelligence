@@ -1,0 +1,41 @@
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# IDE and temporary files
+.vscode/
+.idea/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+_code_review/
+tmp/
+*.zip
+data/
+
+# Original procurement documents
+!tests/fixtures/
+
+# Generated operational artifacts
+outputs/
+
+# Local inventory
+project_file_list.txt
+
+# Local one-off migration/debug utilities retained outside the submission
+scripts/fix_specs_metadata.py
+scripts/planner_smoke.py
+PHASE2_IMPLEMENTATION_REPORT.md

@@ -1,0 +1,1251 @@
+{
+  "questions_evaluated": 18,
+  "total_gold_questions": 18,
+  "top_k": 5,
+  "candidate_k": 20,
+  "metric_note": "One annotated evidence passage per question. Recall@k is equivalent to Hit@k.",
+  "modes": {
+    "ms_marco": {
+      "n_questions": 18,
+      "recall_at_1": 0.6111,
+      "recall_at_5": 0.8889,
+      "mrr_at_5": 0.7269,
+      "mean_latency_s": 1.907,
+      "queries": [
+        {
+          "id": "B1-01",
+          "bid_id": "Bid1",
+          "question": "What is the final submission deadline after Addendum 2?",
+          "first_relevant_rank": 3,
+          "latency_s": 2.321,
+          "top_sources": [
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 1,
+              "chunk_id": "3a8b1b49-af60-5d08-b839-1c51b63a24c3"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 32,
+              "chunk_id": "dcf8d746-a222-5123-bc81-97b6b1cc4dd3"
+            },
+            {
+              "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 1,
+              "chunk_id": "0bcd48b3-184a-5557-9cdd-1e3270c06615"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 2,
+              "chunk_id": "f2c817b9-e161-57b7-9f97-f821ffd21a59"
+            },
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 5,
+              "chunk_id": "8046dbc0-c9e1-530d-914b-dbbe8b1070c5"
+            }
+          ]
+        },
+        {
+          "id": "B1-02",
+          "bid_id": "Bid1",
+          "question": "When was the Bid1 pre-proposal meeting scheduled?",
+          "first_relevant_rank": 2,
+          "latency_s": 1.705,
+          "top_sources": [
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 2,
+              "chunk_id": "0be6b7b2-277f-5642-a6e3-fa646f28b584"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 2,
+              "chunk_id": "de00d2be-a410-5300-a581-852e2806c091"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 47,
+              "chunk_id": "32378726-edf1-5779-8d58-f3b76dbdaa19"
+            },
+            {
+              "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "a94af24a-0d98-527e-a202-9c909a69a455"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 32,
+              "chunk_id": "5171a60b-5ab6-54c9-8175-fe9c508d8409"
+            }
+          ]
+        },
+        {
+          "id": "B1-03",
+          "bid_id": "Bid1",
+          "question": "What is the initial contract term for the student and staff computing devices RFP?",
+          "first_relevant_rank": null,
+          "latency_s": 1.688,
+          "top_sources": [
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 5,
+              "chunk_id": "8046dbc0-c9e1-530d-914b-dbbe8b1070c5"
+            },
+            {
+              "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 1,
+              "chunk_id": "0bcd48b3-184a-5557-9cdd-1e3270c06615"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 3,
+              "chunk_id": "8853fa3d-5432-5cf3-9af2-ad256f03417c"
+            },
+            {
+              "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "dfad29f6-2dfb-5cbe-8804-7eaadda56736"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 3,
+              "chunk_id": "2ec223e1-2474-5abd-a41f-aac5833b5f5c"
+            }
+          ]
+        },
+        {
+          "id": "B1-04",
+          "bid_id": "Bid1",
+          "question": "What minimum warranty periods apply to student Chromebooks and Windows laptops?",
+          "first_relevant_rank": 4,
+          "latency_s": 1.818,
+          "top_sources": [
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "4f04c258-2f85-5555-93a5-1bed4373deca"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "c6aed6cb-14d7-509a-964a-4a0fcc497075"
+            },
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 1,
+              "chunk_id": "e3ffe750-0e79-5e23-a019-96128091a73b"
+            },
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 3,
+              "chunk_id": "a4d2a533-4499-527b-b05e-e2be14a7d85a"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 35,
+              "chunk_id": "9012822d-c08c-58dc-ad3e-6a0a1a8e817f"
+            }
+          ]
+        },
+        {
+          "id": "B1-05",
+          "bid_id": "Bid1",
+          "question": "Is USB 3.0 acceptable for the non-touch display monitor?",
+          "first_relevant_rank": 2,
+          "latency_s": 1.791,
+          "top_sources": [
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 6,
+              "chunk_id": "21d688b9-48b8-5e9e-bfdf-554e879ce993"
+            },
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 1,
+              "chunk_id": "deed3a2f-5749-59e9-a4de-b4e072c7c1cb"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 6,
+              "chunk_id": "b4bf7180-cc14-5d05-b18c-0b9229678ee3"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "c6aed6cb-14d7-509a-964a-4a0fcc497075"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 5,
+              "chunk_id": "71db5ed2-97aa-5ba6-9703-deda3c13568c"
+            }
+          ]
+        },
+        {
+          "id": "B1-06",
+          "bid_id": "Bid1",
+          "question": "Is Windows Autopilot required for the devices?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.817,
+          "top_sources": [
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 4,
+              "chunk_id": "c179cc9a-a0fc-5705-b5c5-492a567a77da"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 5,
+              "chunk_id": "c9390a4a-54e2-5c79-b6f4-41c17c37b947"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "76cdaa86-0bf4-5ec9-bf46-16ffd3b9eb84"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 38,
+              "chunk_id": "f1aad617-f0e9-517d-a607-b2af2289bc34"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 36,
+              "chunk_id": "dfae17e6-190f-56f6-9b3f-37139c4a25a7"
+            }
+          ]
+        },
+        {
+          "id": "B1-07",
+          "bid_id": "Bid1",
+          "question": "What is the minimum RAM for the Tier 1 small student Chromebook?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.616,
+          "top_sources": [
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "4f04c258-2f85-5555-93a5-1bed4373deca"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "c6aed6cb-14d7-509a-964a-4a0fcc497075"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 35,
+              "chunk_id": "9012822d-c08c-58dc-ad3e-6a0a1a8e817f"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 38,
+              "chunk_id": "e5a23799-c126-5308-8e98-5b601c2e584e"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 36,
+              "chunk_id": "bf3f49b2-3786-5312-a4e5-a2c60e275c34"
+            }
+          ]
+        },
+        {
+          "id": "B1-08",
+          "bid_id": "Bid1",
+          "question": "How much RAM does the Tier 3 student Windows laptop require?",
+          "first_relevant_rank": null,
+          "latency_s": 1.606,
+          "top_sources": [
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 6,
+              "chunk_id": "e60ab9a8-c3bf-5d1a-9893-21b92a2b6325"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "c6aed6cb-14d7-509a-964a-4a0fcc497075"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 5,
+              "chunk_id": "c9390a4a-54e2-5c79-b6f4-41c17c37b947"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "76cdaa86-0bf4-5ec9-bf46-16ffd3b9eb84"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 6,
+              "chunk_id": "b9dbbad1-274e-5bb1-90ed-dd6c3a065341"
+            }
+          ]
+        },
+        {
+          "id": "B1-09",
+          "bid_id": "Bid1",
+          "question": "What is the purchasing buyer's email address for Bid1?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.903,
+          "top_sources": [
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 2,
+              "chunk_id": "db3472cd-b536-539f-82ac-8f5dad856fcb"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 9,
+              "chunk_id": "f1ea3d78-b4d4-505e-9e45-ad9e8545cc17"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 46,
+              "chunk_id": "923f07f0-9a4f-50ca-a281-3b3c21490940"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 43,
+              "chunk_id": "87178511-2290-56e2-b648-8dd1beeed79a"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 45,
+              "chunk_id": "4abb433f-7170-5ea8-9476-344b3fe53008"
+            }
+          ]
+        },
+        {
+          "id": "B2-01",
+          "bid_id": "Bid2",
+          "question": "What is the Bid2 solicitation closing date and time?",
+          "first_relevant_rank": 1,
+          "latency_s": 2.05,
+          "top_sources": [
+            {
+              "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "b12a25c4-6be1-5ace-999d-474287411334"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "89d38d56-c935-54f2-bfaf-4779df3588fa"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            },
+            {
+              "file": "Contract_Affidavit.pdf",
+              "page": 3,
+              "chunk_id": "727571fd-443a-5137-86e8-73dd06534769"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "chunk_id": "08c0c5ba-d3a2-537a-9078-8198f9fae930"
+            }
+          ]
+        },
+        {
+          "id": "B2-02",
+          "bid_id": "Bid2",
+          "question": "Which processor is included in the Dell Latitude 5550 configuration?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.63,
+          "top_sources": [
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 1,
+              "chunk_id": "abdf5172-e66c-561e-b936-d80fe1fdaecf"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "1604bc81-715c-58a2-8afb-f8d9b8f0a9c0"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "d768ff49-10fe-585f-b162-44b5e8bb49bc"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "4002802b-f192-5bb1-b1ca-e652aba2a5ad"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "4c6ff9fa-b4f2-5596-aa17-55d6800c486d"
+            }
+          ]
+        },
+        {
+          "id": "B2-03",
+          "bid_id": "Bid2",
+          "question": "How much RAM does the Dell Latitude 5550 have?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.552,
+          "top_sources": [
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 1,
+              "chunk_id": "abdf5172-e66c-561e-b936-d80fe1fdaecf"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "4002802b-f192-5bb1-b1ca-e652aba2a5ad"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "4c6ff9fa-b4f2-5596-aa17-55d6800c486d"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "d768ff49-10fe-585f-b162-44b5e8bb49bc"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "1604bc81-715c-58a2-8afb-f8d9b8f0a9c0"
+            }
+          ]
+        },
+        {
+          "id": "B2-04",
+          "bid_id": "Bid2",
+          "question": "What is the exact model number of the requested Dell Thunderbolt 4 Dock?",
+          "first_relevant_rank": 1,
+          "latency_s": 2.177,
+          "top_sources": [
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "b445422d-84ed-5c48-9b50-42b10c98416a"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "a344a32c-13de-56ea-bce9-a1a378d13d9e"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 1,
+              "chunk_id": "abdf5172-e66c-561e-b936-d80fe1fdaecf"
+            },
+            {
+              "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "b12a25c4-6be1-5ace-999d-474287411334"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            }
+          ]
+        },
+        {
+          "id": "B2-05",
+          "bid_id": "Bid2",
+          "question": "Must the master contractor be an authorized Dell reseller?",
+          "first_relevant_rank": 1,
+          "latency_s": 2.093,
+          "top_sources": [
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "89d38d56-c935-54f2-bfaf-4779df3588fa"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "a344a32c-13de-56ea-bce9-a1a378d13d9e"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "3863c638-e99f-52aa-919f-1d09b1cafa69"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "chunk_id": "08c0c5ba-d3a2-537a-9078-8198f9fae930"
+            }
+          ]
+        },
+        {
+          "id": "B2-06",
+          "bid_id": "Bid2",
+          "question": "How soon after award must the Dell laptop order be delivered?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.863,
+          "top_sources": [
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "89d38d56-c935-54f2-bfaf-4779df3588fa"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "3863c638-e99f-52aa-919f-1d09b1cafa69"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "a344a32c-13de-56ea-bce9-a1a378d13d9e"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "4c6ff9fa-b4f2-5596-aa17-55d6800c486d"
+            }
+          ]
+        },
+        {
+          "id": "B2-07",
+          "bid_id": "Bid2",
+          "question": "Which mercury-related document is required for Bid2?",
+          "first_relevant_rank": 2,
+          "latency_s": 1.547,
+          "top_sources": [
+            {
+              "file": "Mercury_Affidavit.pdf",
+              "page": 1,
+              "chunk_id": "7626aa0a-dd23-5e93-858d-3a6280cb827e"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            },
+            {
+              "file": "Mercury_Affidavit.pdf",
+              "page": 1,
+              "chunk_id": "7ee41693-2756-580f-91cf-de43843a205c"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 4,
+              "chunk_id": "a0028630-b49e-5a68-9e93-37bc77a6ab16"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "chunk_id": "08c0c5ba-d3a2-537a-9078-8198f9fae930"
+            }
+          ]
+        },
+        {
+          "id": "B2-08",
+          "bid_id": "Bid2",
+          "question": "How long is the required Dell hardware extended warranty?",
+          "first_relevant_rank": 1,
+          "latency_s": 3.592,
+          "top_sources": [
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "3863c638-e99f-52aa-919f-1d09b1cafa69"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "b445422d-84ed-5c48-9b50-42b10c98416a"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "89d38d56-c935-54f2-bfaf-4779df3588fa"
+            },
+            {
+              "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "b12a25c4-6be1-5ace-999d-474287411334"
+            }
+          ]
+        },
+        {
+          "id": "B2-09",
+          "bid_id": "Bid2",
+          "question": "What are the technical evaluation criteria for the Dell laptop bid?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.565,
+          "top_sources": [
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 4,
+              "chunk_id": "a0028630-b49e-5a68-9e93-37bc77a6ab16"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "3863c638-e99f-52aa-919f-1d09b1cafa69"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "89d38d56-c935-54f2-bfaf-4779df3588fa"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            },
+            {
+              "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "b12a25c4-6be1-5ace-999d-474287411334"
+            }
+          ]
+        }
+      ]
+    },
+    "cohere": {
+      "n_questions": 18,
+      "recall_at_1": 0.7778,
+      "recall_at_5": 0.8889,
+      "mrr_at_5": 0.8333,
+      "mean_latency_s": 2.318,
+      "queries": [
+        {
+          "id": "B1-01",
+          "bid_id": "Bid1",
+          "question": "What is the final submission deadline after Addendum 2?",
+          "first_relevant_rank": 1,
+          "latency_s": 3.51,
+          "top_sources": [
+            {
+              "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 1,
+              "chunk_id": "0bcd48b3-184a-5557-9cdd-1e3270c06615"
+            },
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 1,
+              "chunk_id": "3a8b1b49-af60-5d08-b839-1c51b63a24c3"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 2,
+              "chunk_id": "de00d2be-a410-5300-a581-852e2806c091"
+            },
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 5,
+              "chunk_id": "8046dbc0-c9e1-530d-914b-dbbe8b1070c5"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 9,
+              "chunk_id": "f1ea3d78-b4d4-505e-9e45-ad9e8545cc17"
+            }
+          ]
+        },
+        {
+          "id": "B1-02",
+          "bid_id": "Bid1",
+          "question": "When was the Bid1 pre-proposal meeting scheduled?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.99,
+          "top_sources": [
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 2,
+              "chunk_id": "de00d2be-a410-5300-a581-852e2806c091"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 2,
+              "chunk_id": "0be6b7b2-277f-5642-a6e3-fa646f28b584"
+            },
+            {
+              "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "a94af24a-0d98-527e-a202-9c909a69a455"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 47,
+              "chunk_id": "32378726-edf1-5779-8d58-f3b76dbdaa19"
+            },
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 2,
+              "chunk_id": "5e369bcc-4af4-5a20-b9e9-f78b6e057575"
+            }
+          ]
+        },
+        {
+          "id": "B1-03",
+          "bid_id": "Bid1",
+          "question": "What is the initial contract term for the student and staff computing devices RFP?",
+          "first_relevant_rank": null,
+          "latency_s": 2.873,
+          "top_sources": [
+            {
+              "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "dfad29f6-2dfb-5cbe-8804-7eaadda56736"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 3,
+              "chunk_id": "8853fa3d-5432-5cf3-9af2-ad256f03417c"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 3,
+              "chunk_id": "2ec223e1-2474-5abd-a41f-aac5833b5f5c"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 34,
+              "chunk_id": "e60174d6-4d17-5077-96c4-78024a1b0f0a"
+            },
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 1,
+              "chunk_id": "deed3a2f-5749-59e9-a4de-b4e072c7c1cb"
+            }
+          ]
+        },
+        {
+          "id": "B1-04",
+          "bid_id": "Bid1",
+          "question": "What minimum warranty periods apply to student Chromebooks and Windows laptops?",
+          "first_relevant_rank": 1,
+          "latency_s": 2.571,
+          "top_sources": [
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 3,
+              "chunk_id": "a4d2a533-4499-527b-b05e-e2be14a7d85a"
+            },
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 1,
+              "chunk_id": "e3ffe750-0e79-5e23-a019-96128091a73b"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "4f04c258-2f85-5555-93a5-1bed4373deca"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "c6aed6cb-14d7-509a-964a-4a0fcc497075"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 5,
+              "chunk_id": "71db5ed2-97aa-5ba6-9703-deda3c13568c"
+            }
+          ]
+        },
+        {
+          "id": "B1-05",
+          "bid_id": "Bid1",
+          "question": "Is USB 3.0 acceptable for the non-touch display monitor?",
+          "first_relevant_rank": 1,
+          "latency_s": 2.493,
+          "top_sources": [
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 1,
+              "chunk_id": "deed3a2f-5749-59e9-a4de-b4e072c7c1cb"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 6,
+              "chunk_id": "21d688b9-48b8-5e9e-bfdf-554e879ce993"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 5,
+              "chunk_id": "71db5ed2-97aa-5ba6-9703-deda3c13568c"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "c6aed6cb-14d7-509a-964a-4a0fcc497075"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 5,
+              "chunk_id": "8df6a099-c913-5eb5-9d04-946dcf913d05"
+            }
+          ]
+        },
+        {
+          "id": "B1-06",
+          "bid_id": "Bid1",
+          "question": "Is Windows Autopilot required for the devices?",
+          "first_relevant_rank": 1,
+          "latency_s": 2.18,
+          "top_sources": [
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 4,
+              "chunk_id": "c179cc9a-a0fc-5705-b5c5-492a567a77da"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 5,
+              "chunk_id": "c9390a4a-54e2-5c79-b6f4-41c17c37b947"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "76cdaa86-0bf4-5ec9-bf46-16ffd3b9eb84"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 5,
+              "chunk_id": "8df6a099-c913-5eb5-9d04-946dcf913d05"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 5,
+              "chunk_id": "71db5ed2-97aa-5ba6-9703-deda3c13568c"
+            }
+          ]
+        },
+        {
+          "id": "B1-07",
+          "bid_id": "Bid1",
+          "question": "What is the minimum RAM for the Tier 1 small student Chromebook?",
+          "first_relevant_rank": 1,
+          "latency_s": 2.308,
+          "top_sources": [
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "4f04c258-2f85-5555-93a5-1bed4373deca"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 36,
+              "chunk_id": "bf3f49b2-3786-5312-a4e5-a2c60e275c34"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 38,
+              "chunk_id": "e5a23799-c126-5308-8e98-5b601c2e584e"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 36,
+              "chunk_id": "4ad9a60a-0043-567b-aef6-77e419601cfb"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 34,
+              "chunk_id": "e60174d6-4d17-5077-96c4-78024a1b0f0a"
+            }
+          ]
+        },
+        {
+          "id": "B1-08",
+          "bid_id": "Bid1",
+          "question": "How much RAM does the Tier 3 student Windows laptop require?",
+          "first_relevant_rank": null,
+          "latency_s": 1.815,
+          "top_sources": [
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 4,
+              "chunk_id": "76cdaa86-0bf4-5ec9-bf46-16ffd3b9eb84"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 36,
+              "chunk_id": "dfae17e6-190f-56f6-9b3f-37139c4a25a7"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 39,
+              "chunk_id": "883c78ad-8dd9-5493-8116-5833a5f88c6c"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 35,
+              "chunk_id": "9012822d-c08c-58dc-ad3e-6a0a1a8e817f"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 39,
+              "chunk_id": "fb810210-8cc1-53a2-85d9-de5414048920"
+            }
+          ]
+        },
+        {
+          "id": "B1-09",
+          "bid_id": "Bid1",
+          "question": "What is the purchasing buyer's email address for Bid1?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.79,
+          "top_sources": [
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 2,
+              "chunk_id": "db3472cd-b536-539f-82ac-8f5dad856fcb"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 2,
+              "chunk_id": "f2c817b9-e161-57b7-9f97-f821ffd21a59"
+            },
+            {
+              "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "a94af24a-0d98-527e-a202-9c909a69a455"
+            },
+            {
+              "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+              "page": 9,
+              "chunk_id": "f1ea3d78-b4d4-505e-9e45-ad9e8545cc17"
+            },
+            {
+              "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+              "page": 5,
+              "chunk_id": "8046dbc0-c9e1-530d-914b-dbbe8b1070c5"
+            }
+          ]
+        },
+        {
+          "id": "B2-01",
+          "bid_id": "Bid2",
+          "question": "What is the Bid2 solicitation closing date and time?",
+          "first_relevant_rank": 1,
+          "latency_s": 3.114,
+          "top_sources": [
+            {
+              "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "b12a25c4-6be1-5ace-999d-474287411334"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "89d38d56-c935-54f2-bfaf-4779df3588fa"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "chunk_id": "89f0b76f-7e53-517e-85aa-b4baeb148078"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "chunk_id": "08c0c5ba-d3a2-537a-9078-8198f9fae930"
+            }
+          ]
+        },
+        {
+          "id": "B2-02",
+          "bid_id": "Bid2",
+          "question": "Which processor is included in the Dell Latitude 5550 configuration?",
+          "first_relevant_rank": 1,
+          "latency_s": 2.375,
+          "top_sources": [
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 1,
+              "chunk_id": "abdf5172-e66c-561e-b936-d80fe1fdaecf"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "4c6ff9fa-b4f2-5596-aa17-55d6800c486d"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "4002802b-f192-5bb1-b1ca-e652aba2a5ad"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "d768ff49-10fe-585f-b162-44b5e8bb49bc"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "1604bc81-715c-58a2-8afb-f8d9b8f0a9c0"
+            }
+          ]
+        },
+        {
+          "id": "B2-03",
+          "bid_id": "Bid2",
+          "question": "How much RAM does the Dell Latitude 5550 have?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.815,
+          "top_sources": [
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 1,
+              "chunk_id": "abdf5172-e66c-561e-b936-d80fe1fdaecf"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "4c6ff9fa-b4f2-5596-aa17-55d6800c486d"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "4002802b-f192-5bb1-b1ca-e652aba2a5ad"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "d768ff49-10fe-585f-b162-44b5e8bb49bc"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "1604bc81-715c-58a2-8afb-f8d9b8f0a9c0"
+            }
+          ]
+        },
+        {
+          "id": "B2-04",
+          "bid_id": "Bid2",
+          "question": "What is the exact model number of the requested Dell Thunderbolt 4 Dock?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.954,
+          "top_sources": [
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "a344a32c-13de-56ea-bce9-a1a378d13d9e"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "b445422d-84ed-5c48-9b50-42b10c98416a"
+            },
+            {
+              "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "b12a25c4-6be1-5ace-999d-474287411334"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 1,
+              "chunk_id": "abdf5172-e66c-561e-b936-d80fe1fdaecf"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            }
+          ]
+        },
+        {
+          "id": "B2-05",
+          "bid_id": "Bid2",
+          "question": "Must the master contractor be an authorized Dell reseller?",
+          "first_relevant_rank": 1,
+          "latency_s": 2.021,
+          "top_sources": [
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "chunk_id": "08c0c5ba-d3a2-537a-9078-8198f9fae930"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "327e875d-36a7-5ac7-bc06-4ce4fa72a8dd"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "chunk_id": "89f0b76f-7e53-517e-85aa-b4baeb148078"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 4,
+              "chunk_id": "3ba1702c-527e-596a-b7c2-72f9593c9be8"
+            }
+          ]
+        },
+        {
+          "id": "B2-06",
+          "bid_id": "Bid2",
+          "question": "How soon after award must the Dell laptop order be delivered?",
+          "first_relevant_rank": 1,
+          "latency_s": 2.616,
+          "top_sources": [
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "89d38d56-c935-54f2-bfaf-4779df3588fa"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "a344a32c-13de-56ea-bce9-a1a378d13d9e"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "3863c638-e99f-52aa-919f-1d09b1cafa69"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 4,
+              "chunk_id": "3ba1702c-527e-596a-b7c2-72f9593c9be8"
+            }
+          ]
+        },
+        {
+          "id": "B2-07",
+          "bid_id": "Bid2",
+          "question": "Which mercury-related document is required for Bid2?",
+          "first_relevant_rank": 2,
+          "latency_s": 2.146,
+          "top_sources": [
+            {
+              "file": "Mercury_Affidavit.pdf",
+              "page": 1,
+              "chunk_id": "7626aa0a-dd23-5e93-858d-3a6280cb827e"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            },
+            {
+              "file": "Mercury_Affidavit.pdf",
+              "page": 1,
+              "chunk_id": "7ee41693-2756-580f-91cf-de43843a205c"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "chunk_id": "08c0c5ba-d3a2-537a-9078-8198f9fae930"
+            },
+            {
+              "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "b12a25c4-6be1-5ace-999d-474287411334"
+            }
+          ]
+        },
+        {
+          "id": "B2-08",
+          "bid_id": "Bid2",
+          "question": "How long is the required Dell hardware extended warranty?",
+          "first_relevant_rank": 1,
+          "latency_s": 1.976,
+          "top_sources": [
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "3863c638-e99f-52aa-919f-1d09b1cafa69"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "b445422d-84ed-5c48-9b50-42b10c98416a"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 1,
+              "chunk_id": "89f0b76f-7e53-517e-85aa-b4baeb148078"
+            },
+            {
+              "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "b12a25c4-6be1-5ace-999d-474287411334"
+            },
+            {
+              "file": "Dell_Laptop_Specs.pdf",
+              "page": 3,
+              "chunk_id": "1604bc81-715c-58a2-8afb-f8d9b8f0a9c0"
+            }
+          ]
+        },
+        {
+          "id": "B2-09",
+          "bid_id": "Bid2",
+          "question": "What are the technical evaluation criteria for the Dell laptop bid?",
+          "first_relevant_rank": 2,
+          "latency_s": 2.174,
+          "top_sources": [
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 3,
+              "chunk_id": "3863c638-e99f-52aa-919f-1d09b1cafa69"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 4,
+              "chunk_id": "a0028630-b49e-5a68-9e93-37bc77a6ab16"
+            },
+            {
+              "file": "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html",
+              "page": 1,
+              "chunk_id": "b12a25c4-6be1-5ace-999d-474287411334"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 2,
+              "chunk_id": "b7426953-0723-59a4-959a-67a480b01478"
+            },
+            {
+              "file": "PORFP_-_Dell_Laptop_Final.pdf",
+              "page": 4,
+              "chunk_id": "3ba1702c-527e-596a-b7c2-72f9593c9be8"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

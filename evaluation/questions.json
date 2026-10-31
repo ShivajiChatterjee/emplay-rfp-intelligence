@@ -1,0 +1,189 @@
+
+[
+  {
+    "id": "B1-01",
+    "bid_id": "Bid1",
+    "question": "What is the final submission deadline after Addendum 2?",
+    "gold": {
+      "file_contains": "Addendum 2 RFP",
+      "page": 1,
+      "anchor": "July 9, 2024 at 2:00 PM CST"
+    }
+  },
+  {
+    "id": "B1-02",
+    "bid_id": "Bid1",
+    "question": "When was the Bid1 pre-proposal meeting scheduled?",
+    "gold": {
+      "file_contains": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+      "page": 2,
+      "anchor": "10-JUN-2024 14:00:00"
+    }
+  },
+  {
+    "id": "B1-03",
+    "bid_id": "Bid1",
+    "question": "What is the initial contract term for the student and staff computing devices RFP?",
+    "gold": {
+      "file_contains": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+      "page": 2,
+      "anchor": "Initial Term: 3"
+    }
+  },
+  {
+    "id": "B1-04",
+    "bid_id": "Bid1",
+    "question": "What minimum warranty periods apply to student Chromebooks and Windows laptops?",
+    "gold": {
+      "file_contains": "Addendum 1 RFP",
+      "page": 3,
+      "anchor": "one-year warranty for student Chromebooks and three years"
+    }
+  },
+  {
+    "id": "B1-05",
+    "bid_id": "Bid1",
+    "question": "Is USB 3.0 acceptable for the non-touch display monitor?",
+    "gold": {
+      "file_contains": "Addendum 1 RFP",
+      "page": 1,
+      "anchor": "USB 3.1 is a minimum requirement"
+    }
+  },
+  {
+    "id": "B1-06",
+    "bid_id": "Bid1",
+    "question": "Is Windows Autopilot required for the devices?",
+    "gold": {
+      "file_contains": "Addendum 1 RFP",
+      "page": 4,
+      "anchor": "For Windows devices, autopilot is required"
+    }
+  },
+  {
+    "id": "B1-07",
+    "bid_id": "Bid1",
+    "question": "What is the minimum RAM for the Tier 1 small student Chromebook?",
+    "gold": {
+      "file_contains": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+      "page": 4,
+      "anchor": "Memory: Minimum 8GB DDR5 Memory"
+    }
+  },
+  {
+    "id": "B1-08",
+    "bid_id": "Bid1",
+    "question": "How much RAM does the Tier 3 student Windows laptop require?",
+    "gold": {
+      "file_contains": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+      "page": 5,
+      "anchor": "Memory: Minimum 16GB RAM DDR5 Memory"
+    }
+  },
+  {
+    "id": "B1-09",
+    "bid_id": "Bid1",
+    "question": "What is the purchasing buyer's email address for Bid1?",
+    "gold": {
+      "file_contains": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+      "page": 2,
+      "anchor": "JALZATE@dallasisd.org"
+    }
+  },
+  {
+    "id": "B2-01",
+    "bid_id": "Bid2",
+    "question": "What is the Bid2 solicitation closing date and time?",
+    "gold": {
+      "file_contains": "Dell Laptops w_Extended Warranty - Bid Information",
+      "page": 1,
+      "anchor": "06/10/2024 02:00 PM EDT"
+    }
+  },
+  {
+    "id": "B2-02",
+    "bid_id": "Bid2",
+    "question": "Which processor is included in the Dell Latitude 5550 configuration?",
+    "filters": {
+      "doc_type": "specs"
+    },
+    "gold": {
+      "file_contains": "Dell_Laptop_Specs.pdf",
+      "page": 1,
+      "anchor": "Intel Core Ultra 5 125U processor"
+    }
+  },
+  {
+    "id": "B2-03",
+    "bid_id": "Bid2",
+    "question": "How much RAM does the Dell Latitude 5550 have?",
+    "filters": {
+      "doc_type": "specs"
+    },
+    "gold": {
+      "file_contains": "Dell_Laptop_Specs.pdf",
+      "page": 1,
+      "anchor": "16 GB: 2 x 8 GB, DDR5"
+    }
+  },
+  {
+    "id": "B2-04",
+    "bid_id": "Bid2",
+    "question": "What is the exact model number of the requested Dell Thunderbolt 4 Dock?",
+    "gold": {
+      "file_contains": "PORFP_-_Dell_Laptop_Final.pdf",
+      "page": 3,
+      "anchor": "WD22TB4"
+    }
+  },
+  {
+    "id": "B2-05",
+    "bid_id": "Bid2",
+    "question": "Must the master contractor be an authorized Dell reseller?",
+    "gold": {
+      "file_contains": "PORFP_-_Dell_Laptop_Final.pdf",
+      "page": 2,
+      "anchor": "authorized reseller for Dell"
+    }
+  },
+  {
+    "id": "B2-06",
+    "bid_id": "Bid2",
+    "question": "How soon after award must the Dell laptop order be delivered?",
+    "gold": {
+      "file_contains": "PORFP_-_Dell_Laptop_Final.pdf",
+      "page": 2,
+      "anchor": "Delivery within 45 days of Award"
+    }
+  },
+  {
+  "id": "B2-07",
+  "bid_id": "Bid2",
+  "question": "Which mercury-related document is required for Bid2?",
+  "gold": {
+    "file_contains": "PORFP_-_Dell_Laptop_Final.pdf",
+    "page": 2,
+    "anchor": "The Master Contractor must provide a Mercury Affidavit"
+  }
+  },
+  {
+    "id": "B2-08",
+    "bid_id": "Bid2",
+    "question": "How long is the required Dell hardware extended warranty?",
+    "gold": {
+      "file_contains": "PORFP_-_Dell_Laptop_Final.pdf",
+      "page": 3,
+      "anchor": "Dell Limited Hardware Warranty Extended for all machines purchased - 3 Years"
+    }
+  },
+  {
+    "id": "B2-09",
+    "bid_id": "Bid2",
+    "question": "What are the technical evaluation criteria for the Dell laptop bid?",
+    "gold": {
+      "file_contains": "PORFP_-_Dell_Laptop_Final.pdf",
+      "page": 4,
+      "anchor": "Accuracy of Bid (Meets All Requirements)"
+    }
+  }
+]

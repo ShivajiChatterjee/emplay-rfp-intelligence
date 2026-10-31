@@ -1,0 +1,529 @@
+{
+  "bid_id": "Bid1",
+  "fields": {
+    "Bid Number": {
+      "value": "JA-207652",
+      "sources": [
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Title": {
+      "value": "Student and Staff Computing Devices SOURCING #168884",
+      "sources": [
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Due Date": {
+      "value": "2024-07-09T14:00:00 CST",
+      "sources": [
+        {
+          "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Bid Submission Type": {
+      "value": "Submissions may be submitted electronically via the iSupplier portal or manually by paper via mail/FedEx/UPS.",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 9
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Term of Bid": {
+      "value": "The initial term is three (3) years, with two (2) successive one (1) year renewal options, not to exceed a total of five (5) years.",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Pre Bid Meeting": {
+      "value": "A pre-proposal meeting was held on June 10, 2024, at 2:00 PM CST via TEAMS video conference (Meeting ID: 270 031 467 036, Passcode: N9ndKY). Attendance is highly encouraged.",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 2
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Installation": {
+      "value": "The required deployment services include software installation (specifically autopilot for Windows devices and enrollment in Google Management for Chromebooks), asset tagging, asset decaling, etching, asset control reporting, and delivery to varied locations including new schools and new additions.",
+      "sources": [
+        {
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 4
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 3
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 7
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Bid Bond Requirement": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents: A complete review of the retrieved base and addendum evidence found only generic bond cross-references, post-award insurance/bond language, or joint-venture bonding capacity. No passage affirmatively states a bid-bond requirement, amount, percentage, or proposal-security submission condition."
+    },
+    "Delivery Date": {
+      "value": "Delivery schedules are to be coordinated with the Dallas ISD ED TECH department.",
+      "sources": [
+        {
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 4
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Payment Terms": {
+      "value": "The Prime vendor must pay all submitted invoices, including retainage to subcontractors, suppliers, or entities within 10 days of receiving payment from the district. No Prime vendor may withhold retainage greater than 5% from the subcontractor. If the contract is terminated for convenience, the vendor will be compensated for work performed and accepted and goods accepted by the District as of the termination date.",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 51
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 23
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Any Additional Documentation Required": {
+      "value": [
+        "Copy of all factory-authorized repair and maintenance certifications (for resellers)",
+        "Demonstrated competencies and references in delivering the magnitude of devices listed on the price sheet (may include details of past projects, statements in reference letters, and/or project plans)",
+        "Completed, signed, and dated M/WBE Compliance Guidelines & Forms",
+        "M/WBE supporting documentation (including M/WBE Certificates, Affirmative Action, Equal Employment Opportunity or Supplier Diversity Plan, signed, dated and notarized Joint Venture Agreement, signed, dated and notarized Mentor Protégé Agreement and Minutes or Prime-Subcontractor Teaming Agreement)",
+        "Form 1295 - Certificate of Interested Parties (unless company is publicly traded)",
+        "Signed copy of Addendum 1",
+        "Signed copy of Addendum 2"
+      ],
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 3
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 49
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 14
+        },
+        {
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 5
+        },
+        {
+          "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "MFG for Registration": {
+      "value": "Yes, for proposing vendors who are resellers, a copy of all factory-authorized repair and maintenance certifications must be submitted with each proposal.",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Contract or Cooperative to use": {
+      "value": "The solicitation identifies the Educational Purchasing Cooperative of North Texas (EPCNT) and the Central Texas Purchasing Alliance (CTPA) as cooperative purchasing vehicles that may be utilized by other governmental entities to 'ride' the agreement resulting from this solicitation.",
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 19
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Model_no": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents: The RFP documents provide a field for 'Proposed Device Make and Model' in the response tables, but do not specify the required manufacturer model numbers for the products. The documents indicate that vendors are expected to propose their own devices."
+    },
+    "Part_no": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents: The provided documents describe the categories of devices required (e.g., Tier 1 Small Student Chromebook Laptop, Tier 2 Staff Professional Desktop) and specify that vendors must provide their own catalog or price list for verification, but they do not list specific manufacturer part numbers or SKUs for the items requested."
+    },
+    "Product": {
+      "value": [
+        "laptops",
+        "desktops",
+        "tablet devices",
+        "display monitors",
+        "device accessories (sleeves, cases, mice, keyboards, and cables)"
+      ],
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 3
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "contact_info": {
+      "value": {
+        "Procurement_Services_Department": {
+          "Email": "ProcurementCS@dallasisd.org",
+          "Phone": "972-925-3700",
+          "Communication_Instruction": "All communication shall go through the Procurement Services Department during this competitive process. Questions concerning this solicitation document should be addressed in writing to the Buyer's Email. No verbal responses will be provided."
+        },
+        "Buyer": {
+          "Name": "Jasmine Alzate",
+          "Email": "JALZATE@dallasisd.org",
+          "Communication_Instruction": "Questions concerning this solicitation document should be addressed in writing to the Buyer's Email."
+        },
+        "submission_delivery": {
+          "mailing_address": "Dallas ISD Procurement Services 9400 N Central Expwy, Ste 1510 Attn: Staff Member and BID NUMBER Dallas, Tx 75231",
+          "submission_context": "Manual submissions must be delivered to the Procurement Services Department, in a sealed envelope by the date and time stated. No fax or email submissions will be accepted. Only one format is needed. The manual submission shall consist of one (1) original hard copy. The Offeror may submit a manual response by paper via mail/FedEx/UPS etc. before the cutoff date and time at the following address"
+        }
+      },
+      "sources": [
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 32
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 2
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 9
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "company_name": {
+      "value": "Dallas Independent School District",
+      "sources": [
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Bid Summary": {
+      "value": "Student and Staff Computing Devices SOURCING #168884. The initial term is three (3) years, with two (2) successive one (1) year renewal options, not to exceed a total of five (5) years. 2024-07-09T14:00:00 CST. Submissions may be submitted electronically via the iSupplier portal or manually by paper via mail/FedEx/UPS. The required deployment services include software installation (specifically autopilot for Windows devices and enrollment in Google Management for Chromebooks), asset tagging, asset decaling, etching, asset control reporting, and delivery to varied locations including new schools and new additions. Delivery schedules are to be coordinated with the Dallas ISD ED TECH department.",
+      "sources": [
+        {
+          "file": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+          "page": 1
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 2
+        },
+        {
+          "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 9
+        },
+        {
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 4
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 3
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 7
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    },
+    "Product Specification": {
+      "value": {
+        "Tier 2 Staff Laptop": {
+          "Management": "Enterprise Management Ready",
+          "CPU": "Intel i7, 14th Gen or equivalent",
+          "Display": "Minimum 13\" diagonal",
+          "Camera": "1080p",
+          "Resolution": "1920 X 1080 minimum",
+          "Memory": "Minimum 32GB DDR5 RAM",
+          "Wireless": "802.11AX WiFi-6E and Bluetooth 5.1",
+          "Power Supply": "USB C, 65W",
+          "Battery Life": "Minimum 10 hours",
+          "Ports": "Minimum 2 USB 3.0; 1 HDMI; 1 headphone/microphone combo",
+          "Storage": "1 TB NVMe SSD",
+          "OS": "Windows 11 or Mac OS",
+          "Warranty": "3-year minimum"
+        },
+        "Tier 1 Staff Basic Laptop": {
+          "Management": "Enterprise Management Ready",
+          "CPU": "Intel i5, 14th Gen or equivalent",
+          "Display": "Minimum 13\" diagonal",
+          "Camera": "1080p",
+          "Memory": "Minimum 16GB DDR5 RAM",
+          "Wireless": "802.11AX WiFi-6E and Bluetooth 5.1",
+          "Power Supply": "USB Type C, 65W",
+          "Battery Life": "Minimum 10 hours",
+          "Ports": "Minimum 1 USB 3.0; 1 USB-C, 1 HDMI; 1 headphone/microphone combo",
+          "Storage": "512 GB NVMe SSD",
+          "OS": "Windows 11 or Mac OS",
+          "Warranty": "3-year minimum"
+        },
+        "Tier 1 Staff Windows Basic Desktop": {
+          "Management": "Enterprise Management Ready with Autopilot Enrollment",
+          "Processor": "Intel i5, 14th Gen or equivalent",
+          "Display": "Minimum 23.8\" diagonal Touch Screen",
+          "Memory": "Minimum 16GB RAM",
+          "Wireless": "802.11AX WiFi-6E and Bluetooth 5.1",
+          "Ports": "Minimum 3 USB 3.0; 2 USB-C; 1 HDMI; 1 headphone/microphone combo",
+          "Storage": "512 GB NVMe SSD",
+          "OS": "Windows 11 Pro",
+          "Warranty": "3-year minimum"
+        },
+        "Tier 1 Small Student Chromebook Laptop": {
+          "Management": "Enterprise Management Ready",
+          "Processor": "Intel Celeron N100 or equivalent",
+          "Display": "Minimum 11.6\" diagonal",
+          "Camera": "720p minimum",
+          "Resolution": "1366 x 768 Multi-touch",
+          "Memory": "Minimum 8GB DDR5 RAM",
+          "Wireless": "802.11AX WiFi-6E and Bluetooth 5.1",
+          "Power Supply": "Type C, 65W",
+          "Battery Life": "Minimum 10 hours",
+          "Ports": "Minimum 2 USB 3.0; type C; 1 headphone/microphone combo",
+          "Storage": "64 GB eMMC",
+          "OS": "Chrome O/S License Required",
+          "Warranty": "1-year minimum"
+        },
+        "Tier 2 Large Student Chromebook Laptop": {
+          "Management": "Enterprise Management Ready",
+          "Processor": "Intel Celeron N100 or equivalent",
+          "Display": "Minimum 14\" diagonal Non-Touch",
+          "Camera": "720p minimum",
+          "Resolution": "1920-1080",
+          "Memory": "Minimum 8GB DDR5 RAM",
+          "Wireless": "802.11AX WiFi-6E and Bluetooth 5.1",
+          "Power Supply": "Type C, 65W",
+          "Battery Life": "Minimum 10 Hours",
+          "Ports": "Minimum 2 USB 3.0; 1 Type C; 65HDMI; 1 headphone/microphone combo",
+          "Storage": "128 GB eMMC",
+          "OS": "Chrome O/S License Required",
+          "Warranty": "1-year minimum"
+        },
+        "Tier 3 Student Windows Laptop": {
+          "Management": "Enterprise Management Ready w/ Autopilot Enrollment",
+          "Processor": "Intel i5 13th Gen or equivalent",
+          "Display": "Minimum 13\" diagonal",
+          "Camera": "720p minimum"
+        },
+        "Student Tablet": {
+          "Management": "Enterprise Management Ready",
+          "Processor": "A13",
+          "Display": "10.2\" Retina",
+          "Camera": "8MP Wide camera",
+          "Resolution": "2160 x 1620 Multi-touch",
+          "Wireless": "802.11AC and Bluetooth 4.2",
+          "Power Supply": "Included",
+          "Battery Life": "Minimum 10 Hours",
+          "Ports": "1 headphone or other personal audio connection",
+          "Storage": "64 GB",
+          "OS": "iOS 17",
+          "Warranty": "1-year minimum"
+        },
+        "Tier 2 Staff Professional Desktop": {
+          "Management": "Enterprise Management Ready",
+          "Processor": "Intel i7, 14th Gen or equivalent",
+          "Display": "Minimum 23.8\" diagonal Touch Screen",
+          "Memory": "Minimum 32GB DDR5 RAM",
+          "Wireless": "802.11AX WiFi-6E and Bluetooth 5.1",
+          "Ports": "Minimum 3 USB 3.0; 1 USB-C, 1 HDMI; 1 headphone/microphone combo",
+          "Storage": "1 TB NVMe SSD",
+          "OS": "Windows 11 Pro or Mac O/S"
+        },
+        "Display Monitor - Touch": {
+          "Display": "Minimum 24\" diagonal",
+          "Resolution": "1920 X 1080",
+          "Port": "USB 3.1 Hub (minimum)",
+          "Aspect Ratio": "16:9",
+          "Contrast": "3000:1",
+          "Warranty": "3-year minimum"
+        },
+        "Display Monitor - Non-Touch": {
+          "Display": "Minimum 24\" diagonal",
+          "Resolution": "1920 X 1080",
+          "Port": "USB 3.1 Hub (minimum)",
+          "Warranty": "3-year minimum"
+        }
+      },
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 6
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 5
+        },
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 4
+        },
+        {
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Deterministic citation and type checks passed"
+    }
+  },
+  "addendum_changes": [
+    {
+      "field_name": "Any Additional Documentation Required",
+      "original_value": [
+        "Copy of all factory-authorized repair and maintenance certifications (for resellers)",
+        "Demonstrated competencies and references in delivering the magnitude of devices listed on the price sheet (may include details of past projects, statements in reference letters, and/or project plans)",
+        "Completed, signed, and dated M/WBE Compliance Guidelines & Forms",
+        "M/WBE supporting documentation (including M/WBE Certificates, Affirmative Action, Equal Employment Opportunity or Supplier Diversity Plan, signed, dated and notarized Joint Venture Agreement, signed, dated and notarized Mentor Protégé Agreement and Minutes or Prime-Subcontractor Teaming Agreement)",
+        "Form 1295 - Certificate of Interested Parties (unless company is publicly traded)"
+      ],
+      "updated_value": [
+        "Copy of all factory-authorized repair and maintenance certifications (for resellers)",
+        "Demonstrated competencies and references in delivering the magnitude of devices listed on the price sheet (may include details of past projects, statements in reference letters, and/or project plans)",
+        "Completed, signed, and dated M/WBE Compliance Guidelines & Forms",
+        "M/WBE supporting documentation (including M/WBE Certificates, Affirmative Action, Equal Employment Opportunity or Supplier Diversity Plan, signed, dated and notarized Joint Venture Agreement, signed, dated and notarized Mentor Protégé Agreement and Minutes or Prime-Subcontractor Teaming Agreement)",
+        "Form 1295 - Certificate of Interested Parties (unless company is publicly traded)",
+        "Signed copy of Addendum 1",
+        "Signed copy of Addendum 2"
+      ],
+      "addendum_number": 1,
+      "addendum_date": null,
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 3
+        },
+        {
+          "file": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 5
+        }
+      ],
+      "notes": "Addendum 1 (page 5) and Addendum 2 (page 1) explicitly require bidders to acknowledge, sign, and return/submit a copy of the addenda with their proposal, effectively adding these documents to the required submission list."
+    },
+    {
+      "field_name": "Due Date",
+      "original_value": "2024-06-27T14:00:00",
+      "updated_value": "2024-07-09T14:00:00 CST",
+      "addendum_number": 2,
+      "addendum_date": null,
+      "sources": [
+        {
+          "file": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+          "page": 2
+        },
+        {
+          "file": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+          "page": 1
+        }
+      ],
+      "notes": "The original RFP document (page 2) specified the solicitation due date as 27-JUN-2024. Addendum 2 (page 1) explicitly states the purpose is to extend the due date to July 9, 2024, at 2:00 PM CST."
+    }
+  ],
+  "validation": {
+    "passed": 17,
+    "failed": 0,
+    "not_found": 3
+  },
+  "trace": [
+    {
+      "agent": "orchestrator_planner",
+      "action": "create_execution_plan",
+      "status": "success",
+      "started_at": "2026-10-31T12:31:39.998346Z",
+      "latency_ms": 0.0,
+      "tool_calls": [],
+      "input_summary": {
+        "mode": "extract",
+        "bid_count": 1,
+        "goal_characters": 44
+      },
+      "output_summary": {
+        "selected_specialist_groups": [
+          "commercial_legal",
+          "dates_logistics",
+          "product_specifications"
+        ],
+        "planned_tasks": 24,
+        "selected_fields": 20,
+        "validation_status": "passed"
+      },
+      "tokens_used": 0,
+      "error": null,
+      "run_id": "d93d9d51-f4e8-4e3d-af7b-af286ec28a4d",
+      "field_name": null,
+      "metadata": {
+        "model": "deterministic-registry-plan",
+        "finish_reason": "LOCAL_VALIDATION",
+        "token_usage": {
+          "prompt_tokens": null,
+          "output_tokens": null,
+          "thought_tokens": null,
+          "total_tokens": 0
+        },
+        "retry_attempts": 0,
+        "failure_classification": null,
+        "structured_output_validation": "passed"
+      }
+    }
+  ]
+}
