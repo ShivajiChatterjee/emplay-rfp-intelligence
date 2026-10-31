@@ -1,0 +1,31 @@
+name: Offline CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      EMPLAY_OFFLINE_TESTS: "1"
+      LANGSMITH_TRACING: "false"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Basic static checks
+        run: python -m compileall -q agents api providers rag workflow main.py ingestion.py
+      - name: Offline tests
+        run: pytest -q
+

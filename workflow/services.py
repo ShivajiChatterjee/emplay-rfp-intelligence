@@ -41,7 +41,7 @@ class WorkflowServices:
             extract=extract_field,
             reconcile=reconcile_field,
             validate=validate_field,
-            answer=answer_question,
-            summarize=generate_bid_summary,
+            answer=lambda **kwargs: answer_question(**kwargs, include_trace=True),
+            summarize=lambda **kwargs: generate_bid_summary(**kwargs, include_trace=True),
             assemble=assemble_final_output,
         )

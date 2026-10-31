@@ -2,7 +2,15 @@
 
 ```mermaid
 flowchart TD
+    UI[HTML / CSS / JavaScript UI] --> API[FastAPI validation and bounded jobs]
     CLI[main.py CLI] --> LG[LangGraph workflow]
+    API --> LG
+    API --> SEARCH[Existing retrieval adapter]
+    API --> CACHE[(Bid/version/config scoped Q&A cache)]
+    API --> ACTIVITY[(Persistent API activity ledger)]
+    CACHE -->|verified hit| UI
+    LG --> TELEMETRY[(Local run telemetry)]
+    API --> TELEMETRY
     LG --> PLAN[Deterministic extract planner\nGemini planner for ask/compare]
     PLAN --> READY[Index readiness / ingestion]
     READY --> PARSE[PDF, HTML and table parsing]
@@ -34,6 +42,9 @@ flowchart TD
 
     LG --> QA[Cited Q&A / comparison]
     QA --> EVIDENCE
+    SEARCH --> EVIDENCE
+    API --> DOCS[Authorized catalog document resolver]
+    DOCS --> UI
 ```
 
 ## Execution invariants
@@ -49,3 +60,19 @@ flowchart TD
    status.
 6. Publication requires exactly 20 official fields and final Pydantic
    validation; partial runs receive manifests and traces but no official JSON.
+7. The HTTP layer accepts catalog identifiers, never arbitrary filesystem
+   paths, and caps uploads and background work.
+8. Q&A cache reuse requires a matching bid/index/configuration scope, fresh
+   citations and unchanged numeric and negation qualifiers.
+9. Telemetry never synthesizes missing provider usage or billed cost.
+10. Application activity is stored separately from immutable historical
+    workflow manifests and traces; neither view deletes or rewrites the other.
+
+## Local API boundary
+
+FastAPI is an adapter over the existing agents. Search calls
+`agents.retrieval_agent.search_evidence`; Q&A and extraction call
+`workflow.run_workflow`; indexing calls `ensure_bid_indexed`. The frontend does
+not duplicate retrieval, extraction, reconciliation or validation behavior.
+GitHub Actions compiles the Python packages and runs the offline test suite
+without provider credentials or live service calls.

@@ -45,6 +45,49 @@ Optional controls include `GEMINI_TIMEOUT_MS`,
 `EMPLAY_MAX_CONTACT_STRUCTURE_CHUNKS`. See `.env.example` for a conservative
 single-worker configuration.
 
+API controls include upload limits, bounded job workers, cache TTL/storage and
+optional pricing metadata. Pricing values are per one million tokens. If usage
+or pricing is unavailable, the API reports cost as unavailable rather than
+inventing an estimate.
+
+## Windows local web application
+
+The FastAPI application serves the genuine HTML/CSS/JavaScript frontend and
+calls the same retrieval, Q&A and LangGraph extraction workflows used by the
+CLI. It does not contain sample-response shortcuts.
+
+```powershell
+cd C:\Users\wwwri\vscode\emplay-rfp-v2
+.\.venv\Scripts\Activate.ps1
+python -m uvicorn api.app:app --host 127.0.0.1 --port 8000 --reload
+```
+
+Open `http://127.0.0.1:8000`. The OpenAPI contract is available at
+`http://127.0.0.1:8000/docs`.
+
+The local UI provides:
+
+- a bid dashboard and safe PDF/HTML upload/index workflow;
+- Qdrant hybrid search with Cohere reranking metadata and original evidence;
+- cited Q&A through the production LangGraph workflow;
+- viewing and starting/resuming the official 20-field extraction;
+- bid-to-bid field comparison with confidence and citations;
+- extracted-answer/original-document side-by-side inspection; and
+- run metrics and authentic local trace inspection.
+
+Background indexing and extraction jobs are deliberately bounded. Repeated
+grounded questions use a conservative SQLite cache scoped by bid identity,
+local document/index version and retrieval configuration. Numeric/model
+qualifiers and negation must match before reuse, and only answers with fresh
+citations are cached. Reindexing invalidates only that bid's entries.
+
+Application-originated upload, index, Q&A and extraction activity is persisted
+in `outputs/api_activity.sqlite3` (or `EMPLAY_ACTIVITY_PATH`). The Runs & Traces
+screen keeps these operations separate from preserved CLI/development history.
+Historical runs without post-API telemetry remain inspectable and explicitly
+report that metrics were not recorded; missing token or cost data is never
+inferred.
+
 ## One-command CLI
 
 Ingest a bid folder:
@@ -132,3 +175,22 @@ An annotated authentic workflow trace is documented in
   justified not-found, and zero failed fields.
 - Existing local workflow traces remain under `outputs/`; LangSmith transport is
   optional and non-fatal.
+
+## Local application limitations
+
+- The API is intended for a trusted local workstation. It does not implement
+  multi-user authentication or authorization; do not expose it directly to the
+  public internet.
+- Background job state is in process. Existing workflow checkpoints remain
+  durable, but the API job-progress record itself does not survive a server
+  restart.
+- The semantic cache intentionally favors false misses over unsafe reuse and is
+  not a replacement for the Qdrant document index.
+- PDF page navigation uses the browser's standard `#page=` support. Passage
+  text is shown beside the document when trustworthy highlight coordinates are
+  unavailable.
+- Gemini token splits, Cohere usage and embedding usage are shown only when the
+  providers recorded them. Cost estimates require explicit pricing variables
+  and a pricing date.
+- Docker packaging is intentionally omitted for this local Windows submission;
+  the assignment's optional container path is not required to run the app.

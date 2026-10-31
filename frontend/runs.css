@@ -1,0 +1,127 @@
+.run-tabs {
+  display: flex;
+  gap: 5px;
+  margin: 0 0 14px;
+  padding: 4px;
+  width: max-content;
+  background: #e8ece8;
+  border-radius: 10px;
+}
+
+.run-tab {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 9px 14px;
+  border-radius: 7px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.run-tab.active {
+  background: #fff;
+  color: var(--forest);
+  box-shadow: 0 2px 8px rgba(22, 45, 34, .08);
+}
+
+.inspected-run {
+  margin: 16px 0 0;
+  padding: 12px 15px;
+  border-left: 3px solid var(--forest-2);
+  background: #eef3ef;
+  color: #4d5c53;
+  font-size: 13px;
+}
+
+.trace-list {
+  display: grid;
+  gap: 8px;
+}
+
+.trace-step {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.trace-step summary {
+  padding: 13px 15px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 38px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.trace-step summary::-webkit-details-marker {
+  display: none;
+}
+
+.trace-order {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #e7efe9;
+  color: var(--forest);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.trace-title strong,
+.trace-title small {
+  display: block;
+}
+
+.trace-title strong {
+  font-size: 13px;
+}
+
+.trace-title small {
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.trace-status {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.trace-status.error,
+.trace-status.failed {
+  color: #a53c38;
+}
+
+.trace-status.success,
+.trace-status.passed {
+  color: #287252;
+}
+
+.trace-details {
+  border-top: 1px solid var(--line);
+  padding: 14px;
+  background: #f8faf8;
+}
+
+.trace-details pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0;
+  font: 11px/1.55 ui-monospace, SFMono-Regular, Consolas, monospace;
+  color: #344239;
+}
+
+.context-card {
+  margin-top: 12px;
+}
+
+.context-card summary {
+  cursor: pointer;
+  font-weight: 800;
+  color: var(--forest);
+}

@@ -13,7 +13,8 @@ def propose_query_rewrite(
     request: EvidenceSearchRequest,
     warnings: list[str],
     llm_client: GeminiClient | None = None,
-) -> QueryRewrite:
+    include_generation: bool = False,
+):
     client = llm_client or get_gemini_client()
     prompt = f"""
 Reformulate one unsuccessful RFP evidence search. Keep the same intent and never
@@ -48,7 +49,7 @@ Do not include or change a bid identifier in the rewritten question.
         "bid_page",
     }:
         raise ValueError(f"Unsupported rewritten doc_type: {rewrite.doc_type}")
-    return rewrite
+    return (rewrite, result) if include_generation else rewrite
 
 
 def retrieve_adaptively(
@@ -70,10 +71,11 @@ def retrieve_adaptively(
     if result.passages or result.status == "error" or not allow_rewrite:
         return result
 
-    rewrite = propose_query_rewrite(
+    rewrite, rewrite_generation = propose_query_rewrite(
         request,
         result.warnings,
         llm_client=llm_client,
+        include_generation=True,
     )
     rewritten_request = request.model_copy(
         update={
@@ -88,4 +90,16 @@ def retrieve_adaptively(
         0,
         f"Adaptive query rewrite used: {rewrite.rationale or rewrite.question}",
     )
+    trace = getattr(retried, "trace", None)
+    usage = getattr(rewrite_generation, "usage", None)
+    if trace is not None:
+        trace.latency_ms += getattr(rewrite_generation, "latency_ms", 0)
+        trace.tokens_used = getattr(usage, "total_tokens", None)
+        model = getattr(rewrite_generation, "model", getattr(llm_client, "model", "configured-model"))
+        trace.tool_calls.append(f"google.genai.generate_content:{model}")
+        trace.metadata.update({
+            "query_rewrite": True,
+            "query_rewrite_model": model,
+            "token_usage": usage.model_dump() if hasattr(usage, "model_dump") else {},
+        })
     return retried

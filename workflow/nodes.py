@@ -627,6 +627,7 @@ def build_nodes(services: WorkflowServices) -> dict[str, Any]:
         evidence_by_bid: dict[str, list[Evidence]] = {}
         warnings = []
         events = []
+        qa_traces = []
         for bid_id in state["request"]["bid_ids"]:
             try:
                 result = services.retrieve(
@@ -646,6 +647,8 @@ def build_nodes(services: WorkflowServices) -> dict[str, Any]:
                     passage.evidence for passage in result.passages
                 ]
                 warnings.extend(getattr(result, "warnings", []))
+                if getattr(result, "trace", None) is not None:
+                    qa_traces.append(result.trace)
             except Exception as exc:
                 evidence_by_bid[bid_id] = []
                 warnings.append(
@@ -661,10 +664,19 @@ def build_nodes(services: WorkflowServices) -> dict[str, Any]:
                 )
             )
         try:
-            answer = services.answer(
+            answer_result = services.answer(
                 question=question,
                 evidence_by_bid=evidence_by_bid,
             )
+            if (
+                isinstance(answer_result, tuple)
+                and len(answer_result) == 2
+                and isinstance(answer_result[1], AgentTrace)
+            ):
+                answer, answer_trace = answer_result
+            else:
+                answer = answer_result
+                answer_trace = None
         except Exception as exc:
             from agents.schemas import CitedAnswer
 
@@ -673,6 +685,12 @@ def build_nodes(services: WorkflowServices) -> dict[str, Any]:
                 confidence=0.0,
                 notes=f"Answer generation failed: {type(exc).__name__}: {exc}",
             )
+            answer_trace = AgentTrace(
+                agent="qa_report",
+                action="answer",
+                status="error",
+                error=f"{type(exc).__name__}: answer generation failed",
+            )
         return {
             "evidence": {
                 f"{bid_id}::qa": items
@@ -680,6 +698,10 @@ def build_nodes(services: WorkflowServices) -> dict[str, Any]:
             },
             "qa_answer": answer,
             "warnings": warnings,
+            "agent_traces": [
+                *qa_traces,
+                *([answer_trace] if answer_trace is not None else []),
+            ],
             "events": [
                 *events,
                 _event(
@@ -706,6 +728,7 @@ def build_nodes(services: WorkflowServices) -> dict[str, Any]:
             if not record.terminal
         }
         errors = []
+        summary_trace = None
         if unresolved or len(state.get("field_statuses", {})) < 19:
             message = "Bid Summary deferred because one or more source fields are incomplete"
             summary = ExtractedField(
@@ -721,10 +744,18 @@ def build_nodes(services: WorkflowServices) -> dict[str, Any]:
             errors.append(message)
         else:
           try:
-            summary = services.summarize(
+            summary_result = services.summarize(
                 fields=fields,
                 decisions=decisions,
             )
+            if (
+                isinstance(summary_result, tuple)
+                and len(summary_result) == 2
+                and isinstance(summary_result[1], AgentTrace)
+            ):
+                summary, summary_trace = summary_result
+            else:
+                summary = summary_result
             summary_decision = services.validate(
                 field=summary,
                 field_spec=get_field_spec("Bid Summary"),
@@ -746,6 +777,12 @@ def build_nodes(services: WorkflowServices) -> dict[str, Any]:
                 reasons=[summary.reasoning],
                 retry_required=False,
                 confidence=0.0,
+            )
+            summary_trace = AgentTrace(
+                agent="qa_report",
+                action="generate_bid_summary",
+                status="error",
+                error=f"{type(exc).__name__}: summary generation failed",
             )
           summary_status = FieldRunRecord(
               status=({"not_found": "not_found_evidence", "failed": "validation_failed"}.get(summary_decision.status, summary_decision.status)),
@@ -774,7 +811,10 @@ def build_nodes(services: WorkflowServices) -> dict[str, Any]:
                 fields=fields,
                 decisions=decisions,
                 changes=state.get("addendum_changes", []),
-                trace=state.get("agent_traces", []),
+                trace=[
+                    *state.get("agent_traces", []),
+                    *([summary_trace] if summary_trace is not None else []),
+                ],
             )
             if publishable else None
         )
@@ -783,6 +823,7 @@ def build_nodes(services: WorkflowServices) -> dict[str, Any]:
             "validation": {"Bid Summary": summary_decision},
             "field_statuses": {"Bid Summary": summary_status},
             "errors": errors,
+            "agent_traces": [summary_trace] if summary_trace is not None else [],
             "final_output": output,
             "events": [
                 _event(

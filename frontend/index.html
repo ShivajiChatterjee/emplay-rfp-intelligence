@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Evidence-grounded procurement intelligence for RFP teams">
+  <title>Emplay RFP Intelligence</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/runs.css">
+  <link rel="stylesheet" href="/assets/upload.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard" aria-label="Emplay dashboard">
+        <span class="brand-mark">E</span>
+        <span><strong>Emplay</strong><small>RFP Intelligence</small></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <button class="nav-item active" data-screen="dashboard"><span>◫</span> Dashboard</button>
+        <button class="nav-item" data-screen="upload"><span>⇧</span> Upload &amp; index</button>
+        <button class="nav-item" data-screen="search"><span>⌕</span> Evidence search</button>
+        <button class="nav-item" data-screen="ask"><span>✦</span> Ask AI</button>
+        <button class="nav-item" data-screen="extract"><span>◇</span> Extract fields</button>
+        <button class="nav-item" data-screen="compare"><span>⇄</span> Compare bids</button>
+        <button class="nav-item" data-screen="runs"><span>⌁</span> Runs &amp; traces</button>
+      </nav>
+      <div class="system-status"><i></i><span id="health-label">Checking system</span></div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button id="menu-toggle" class="icon-button" aria-label="Toggle navigation">☰</button>
+        <div><p class="eyebrow">PROCUREMENT WORKSPACE</p><h1 id="page-title">Dashboard</h1></div>
+        <div class="top-actions"><button class="button ghost" id="refresh-button">Refresh</button><span class="avatar">RF</span></div>
+      </header>
+
+      <div id="notice" class="notice" role="status" hidden></div>
+
+      <section class="screen active" id="screen-dashboard">
+        <div class="hero">
+          <div><p class="eyebrow light">EVIDENCE-FIRST INTELLIGENCE</p><h2>Make every bid decision traceable.</h2><p>Search source documents, validate extraction results and compare procurement requirements without losing the evidence behind them.</p></div>
+          <button class="button light" data-go="upload">Add a bid <span>→</span></button>
+        </div>
+        <div class="stats" id="dashboard-stats"></div>
+        <div class="section-heading"><div><p class="eyebrow">BID LIBRARY</p><h2>Active opportunities</h2></div><button class="text-button" data-go="compare">Compare bids →</button></div>
+        <div class="bid-grid" id="bid-grid"><div class="empty">Loading bids…</div></div>
+        <div class="section-heading"><div><p class="eyebrow">APPLICATION ACTIVITY</p><h2>Recent UI operations</h2></div><button class="text-button" data-go="runs">Inspect runs →</button></div>
+        <div id="recent-runs" class="results-list"><div class="empty">Loading application runs…</div></div>
+      </section>
+
+      <section class="screen" id="screen-upload">
+        <div class="section-heading"><div><p class="eyebrow">NEW OPPORTUNITY</p><h2>Upload and index a bid</h2><p>PDF and HTML files are stored under a validated bid identifier.</p></div></div>
+        <form id="upload-form" class="panel form-panel">
+          <label>Bid identifier<input name="bid_id" required pattern="[A-Za-z0-9][A-Za-z0-9._-]{0,79}" placeholder="e.g. County-Laptops-2027"></label>
+          <label class="dropzone" id="upload-dropzone">Source documents<input id="source-files" name="files" type="file" accept=".pdf,.html,.htm" multiple><span class="drop-icon">⇧</span><strong>Choose files or drag them here</strong><small>Use Ctrl or Shift in Windows File Explorer to select multiple PDF, HTML and HTM documents.</small></label>
+          <div id="selected-file-summary" class="selected-file-summary">No files selected.</div>
+          <div id="selected-files" class="selected-files" aria-live="polite"></div>
+          <div class="actions"><button class="button primary" id="upload-documents" type="submit" disabled>Upload documents</button></div>
+          <div class="index-controls">
+            <label>Eligible bid to index<select id="index-bid"><option value="">Select an uploaded bid</option></select></label>
+            <button class="button secondary" id="index-uploaded" type="button" disabled>Start indexing</button>
+          </div>
+        </form>
+        <div id="upload-result"></div>
+        <div id="index-status"></div>
+      </section>
+
+      <section class="screen" id="screen-search">
+        <div class="section-heading"><div><p class="eyebrow">HYBRID RETRIEVAL</p><h2>Search the original evidence</h2><p>Results preserve physical pages, source files and evidence identifiers.</p></div></div>
+        <form id="search-form" class="search-bar panel">
+          <select name="bid_id" class="bid-select" required></select>
+          <input name="query" required minlength="2" placeholder="Search requirements, dates, products or terms…">
+          <button class="button primary">Search</button>
+          <details><summary>Filters</summary><div class="filter-grid"><label>Document type<input name="doc_type"></label><label>Addendum number<input name="addendum_number" type="number" min="1"></label><label>File name<input name="file_name"></label></div></details>
+        </form>
+        <div id="search-results" class="results-list"></div>
+      </section>
+
+      <section class="screen" id="screen-ask">
+        <div class="section-heading"><div><p class="eyebrow">GROUNDED Q&amp;A</p><h2>Ask the bid, inspect the proof</h2><p>Only verified answers with source citations are shown.</p></div></div>
+        <form id="ask-form" class="panel ask-box">
+          <select name="bid_id" class="bid-select" required></select>
+          <textarea name="question" required minlength="2" placeholder="What does the solicitation require?"></textarea>
+          <button class="button primary">Ask with evidence</button>
+        </form>
+        <div id="answer-result"></div>
+      </section>
+
+      <section class="screen" id="screen-extract">
+        <div class="section-heading"><div><p class="eyebrow">20-FIELD CONTRACT</p><h2>Validated extraction</h2><p>Review values, confidence, status and citations. Existing completed results are never recomputed just for viewing.</p></div><div class="inline-controls"><select id="extract-bid" class="bid-select"></select><button id="load-fields" class="button secondary">Load result</button><button id="download-fields" class="button secondary" disabled>Download JSON</button><button id="start-extract" class="button primary">Run / resume</button></div></div>
+        <div id="extraction-summary"></div>
+        <div id="fields-table" class="table-wrap"></div>
+      </section>
+
+      <section class="screen" id="screen-compare">
+        <div class="section-heading"><div><p class="eyebrow">SIDE BY SIDE</p><h2>Compare evidence, not assumptions</h2><p>Differences are derived only from published field values.</p></div><button id="export-comparison" class="button secondary" disabled>Export Markdown</button></div>
+        <form id="compare-form" class="compare-controls panel"><label>Bid A<select name="bid_a" class="bid-select"></select></label><span>versus</span><label>Bid B<select name="bid_b" class="bid-select"></select></label><button class="button primary">Compare all fields</button></form>
+        <div id="comparison-results"></div>
+      </section>
+
+      <section class="screen" id="screen-runs">
+        <div class="section-heading"><div><p class="eyebrow">OBSERVABILITY</p><h2>Run metrics and agent trace</h2><p>Application activity is separated from preserved CLI and development history.</p></div></div>
+        <div class="run-tabs" role="tablist" aria-label="Run source">
+          <button class="run-tab active" data-run-scope="application" role="tab" aria-selected="true">Application runs</button>
+          <button class="run-tab" data-run-scope="historical" role="tab" aria-selected="false">Historical runs</button>
+        </div>
+        <div id="run-list" class="results-list"><div class="empty">Loading application runs…</div></div>
+        <form id="run-form" class="panel run-form"><input name="run_id" required pattern="[0-9a-fA-F-]{36}" placeholder="Run UUID"><button class="button primary">Inspect run</button></form>
+        <div id="inspected-run" class="inspected-run" aria-live="polite">Select a run to inspect its recorded data.</div>
+        <div class="split-grid"><div id="metrics-result"></div><div id="trace-result"></div></div>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="evidence-dialog">
+    <div class="dialog-head"><div><p class="eyebrow">SOURCE EVIDENCE</p><h2 id="evidence-title">Document preview</h2></div><button id="close-dialog" class="icon-button" aria-label="Close">×</button></div>
+    <div class="evidence-split"><article><h3>Selected evidence</h3><p id="evidence-meta" class="meta"></p><blockquote id="evidence-quote"></blockquote></article><iframe id="document-frame" title="Original source document"></iframe></div>
+  </dialog>
+
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

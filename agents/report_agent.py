@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from datetime import datetime, timezone
 from typing import Any
 
 from pydantic import BaseModel, Field
@@ -149,14 +150,22 @@ def answer_question(
     question: str,
     evidence_by_bid: dict[str, list[Evidence]],
     llm_client: GeminiClient | None = None,
-) -> CitedAnswer:
+    include_trace: bool = False,
+) -> CitedAnswer | tuple[CitedAnswer, AgentTrace]:
     """Answer from separated per-bid evidence and verify every citation."""
 
     if not any(evidence_by_bid.values()):
-        return CitedAnswer(
+        answer = CitedAnswer(
             answer="Not found in documents",
             confidence=0.0,
             notes="Retrieval returned no supporting evidence.",
+        )
+        if not include_trace:
+            return answer
+        return answer, AgentTrace(
+            agent="qa_report", action="answer", status="skipped",
+            tool_calls=[], output_summary={"cited_sources": 0},
+            metadata={"token_usage": {}},
         )
 
     payload = {
@@ -172,7 +181,8 @@ def answer_question(
         for bid_id, evidence in evidence_by_bid.items()
     }
     client = llm_client or get_gemini_client()
-    answer = client.generate_structured(
+    started = datetime.now(timezone.utc)
+    generation = client.generate_structured(
         json.dumps(
             {
                 "question": question,
@@ -187,7 +197,8 @@ def answer_question(
         CitedAnswer,
         system_instruction=QA_REPORT_PROMPT,
         generation=GenerationSettings(temperature=0, max_output_tokens=900),
-    ).output
+    )
+    answer = generation.output
 
     lookup = {
         (bid_id, item.file_name, item.page_number, item.chunk_id)
@@ -200,12 +211,38 @@ def answer_question(
         if (source.bid_id, source.file, source.page, source.chunk_id) not in lookup
     ]
     if invalid or (answer.answer != "Not found in documents" and not answer.sources):
-        return CitedAnswer(
+        answer = CitedAnswer(
             answer="Not found in documents",
             confidence=0.0,
             notes="Generated answer contained unsupported or missing citations.",
         )
-    return answer
+    if not include_trace:
+        return answer
+    usage = generation.usage
+    return answer, AgentTrace(
+        agent="qa_report",
+        action="answer",
+        status="success",
+        started_at=started,
+        latency_ms=generation.latency_ms,
+        tool_calls=[f"google.genai.generate_content:{generation.model}"],
+        input_summary={
+            "bid_count": len(evidence_by_bid),
+            "evidence_count": sum(len(items) for items in evidence_by_bid.values()),
+            "question_characters": len(question),
+        },
+        output_summary={
+            "cited_sources": len(answer.sources),
+            "confidence": answer.confidence,
+            "validation_status": "passed" if answer.sources else "unsupported",
+        },
+        tokens_used=usage.total_tokens,
+        metadata={
+            "model": generation.model,
+            "finish_reason": generation.finish_reason,
+            "token_usage": usage.model_dump(),
+        },
+    )
 
 
 def generate_bid_summary(
@@ -213,7 +250,34 @@ def generate_bid_summary(
     fields: dict[str, ExtractedField],
     decisions: dict[str, CriticDecision],
     llm_client: GeminiClient | None = None,
-) -> ExtractedField:
+    include_trace: bool = False,
+) -> ExtractedField | tuple[ExtractedField, AgentTrace]:
+    def finish(field: ExtractedField, generation=None, error: GeminiGenerationError | None = None):
+        if not include_trace:
+            return field
+        usage = getattr(generation, "usage", None) if generation is not None else getattr(error, "usage", None)
+        trace = AgentTrace(
+            agent="qa_report",
+            action="generate_bid_summary",
+            status="error" if error is not None else ("success" if generation is not None else "skipped"),
+            latency_ms=(getattr(generation, "latency_ms", 0) if generation is not None else getattr(error, "latency_ms", 0)),
+            tool_calls=(
+                [f"google.genai.generate_content:{getattr(generation, 'model', 'configured-model')}"]
+                if generation is not None
+                else (["google.genai.generate_content"] if error is not None else [])
+            ),
+            input_summary={"validated_fields": len(supported)},
+            output_summary={"summary_status": field.status},
+            tokens_used=getattr(usage, "total_tokens", None),
+            error=(getattr(error, "classification", None) if error is not None else None),
+            metadata={
+                "model": getattr(generation, "model", None),
+                "finish_reason": getattr(generation, "finish_reason", None),
+                "token_usage": usage.model_dump() if hasattr(usage, "model_dump") else {},
+            },
+        )
+        return field, trace
+
     supported = {
         name: {
             "value": field.value,
@@ -233,16 +297,16 @@ def generate_bid_summary(
         and field.value is not None
     }
     if not supported:
-        return ExtractedField(
+        return finish(ExtractedField(
             field_name="Bid Summary",
             status="not_found",
             value=None,
             reasoning="Not found in documents: no validated fields were available.",
-        )
+        ))
 
     client = llm_client or get_gemini_client()
     try:
-        response = client.generate_structured(
+        generation = client.generate_structured(
             json.dumps(
                 {
                     "validated_fields": supported,
@@ -253,7 +317,8 @@ def generate_bid_summary(
             SummaryResponse,
             system_instruction=QA_REPORT_PROMPT,
             generation=GenerationSettings(temperature=0, max_output_tokens=500),
-        ).output
+        )
+        response = generation.output
     except GeminiGenerationError as exc:
         if exc.classification not in {
             "transient_unavailable", "timeout", "transport", "quota_or_rate_limit"
@@ -264,19 +329,19 @@ def generate_bid_summary(
         )
         if fallback is None:
             raise
-        return fallback.model_copy(update={
+        return finish(fallback.model_copy(update={
             "reasoning": (
                 "Deterministic fallback assembled from exact validated field "
                 f"values after summary provider failure ({exc.classification})."
             )
-        })
+        }), error=exc)
     if response.value is None:
-        return ExtractedField(
+        return finish(ExtractedField(
             field_name="Bid Summary",
             status="not_found",
             value=None,
             reasoning=response.notes or "Not found in documents",
-        )
+        ), generation=generation)
 
     # The model's source_fields list is advisory. Ground every claim against
     # all citations from validated fields, then retain only actual supporters.
@@ -294,9 +359,9 @@ def generate_bid_summary(
             fields=fields, decisions=decisions
         )
         if fallback is not None:
-            return fallback
+            return finish(fallback, generation=generation)
     if not citations or attribution_errors or not 3 <= sentence_count <= 6:
-        return ExtractedField(
+        return finish(ExtractedField(
             field_name="Bid Summary",
             status="error",
             value=None,
@@ -304,15 +369,15 @@ def generate_bid_summary(
                 "Summary lacked complete claim-level source attribution or did "
                 "not contain 3-6 sentences."
             ),
-        )
-    return ExtractedField(
+        ), generation=generation)
+    return finish(ExtractedField(
         field_name="Bid Summary",
         status="found",
         value=response.value,
         confidence=response.confidence,
         citations=citations,
         reasoning=response.notes,
-    )
+    ), generation=generation)
 
 
 def assemble_final_output(
